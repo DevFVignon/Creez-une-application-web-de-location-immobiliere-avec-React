@@ -1,20 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-// import Home from './pages/Home/'
-import Card from '../pages/Card'
-import Error from '../pages/ErrorPage'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Card from '../pages/Card';
+import ErrorPage from '../pages/ErrorPage'; // Importez également votre page d'erreur
+import About from '../pages/About';
+import Home from '../pages/Home';
+import Header from '../components/Header';
 
+function Rooter(){
+    return (
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/card" element={<Card />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </Router>
+    );
+  }
 
- 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <Router>
-            <Routes>
-                <Route path="/card" element={<Card />} />
-                <Route path="/erropage" element={<Error />} />
-            </Routes>
-                  </Router>
-  </React.StrictMode>
-);
+export default Rooter
