@@ -13,7 +13,7 @@
      object-fit: cover;
   border-radius: 15px;
   display: block;
-  aspect-ratio: 18/3;
+  aspect-ratio: 9/1;
 }
 .banner-container .banner-overlay {
   position: absolute;

@@ -1,0 +1,24 @@
+.card {
+  background-color: #FF6060;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.card > img {
+  display: block;
+  width: 100%;
+  height: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card > p {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  padding: 5%;
+  margin: 0;
+}/*# sourceMappingURL=Card.css.map */

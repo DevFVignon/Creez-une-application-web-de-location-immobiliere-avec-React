@@ -1,0 +1,27 @@
+$color-pink: #FF6060;
+
+.card{
+    background-color: $color-pink;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    position: relative;
+
+    >img{
+        display: block;
+        width: 100%;
+        height: 75%;
+        object-fit: cover;
+    }
+
+    >p{
+        position: absolute;
+        bottom: 0;
+        width:70%;
+        font-size: 18px;
+        line-height: 25px;
+        color: white;
+        padding: 5%;
+        margin: 0;
+    }
+}
