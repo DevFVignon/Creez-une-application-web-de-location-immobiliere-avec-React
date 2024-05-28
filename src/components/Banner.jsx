@@ -1,12 +1,12 @@
-import imageSourceUne from '../assets/Image source 1.png'
-import '../components/Banner.css'
+import './Banner.css'
 
-function Banner() {
-    return(
+function Banner(props) {
+    const imgSrc= require(`${props.img}`);
+    return(  
         <div className='banner-container'>
-            <img src={imageSourceUne} alt='Banner' />
+            <img src={imgSrc} alt='Banner' />
             <div className='banner-overlay'></div>
-            <div className='banner-text'>Chez vous, partout et ailleurs</div>
+            <div className='banner-text'>{props.text}</div>
         </div>
     )
 }

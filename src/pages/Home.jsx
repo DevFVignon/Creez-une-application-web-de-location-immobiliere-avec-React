@@ -5,7 +5,7 @@ function Home() {
     return (
         <div>
             <Header/>
-            <Banner/>
+            <Banner img="../assets/Image source 1.png" text="Chez vous, partout et ailleurs"/>
         </div>
     )
 }
