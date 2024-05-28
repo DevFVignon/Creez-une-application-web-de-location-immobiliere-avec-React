@@ -1,0 +1,24 @@
+.nav {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav-links {
+  display: flex;
+  gap: 50px;
+  font-size: 1.75em;
+}
+.nav .nav-links > a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.nav .nav-links > a.active {
+  text-decoration: underline;
+  cursor: default;
+}/*# sourceMappingURL=Header.css.map */
