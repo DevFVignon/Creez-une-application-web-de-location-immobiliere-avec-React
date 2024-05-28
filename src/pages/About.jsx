@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import Banner from '../components/Banner_temp'
+import Footer from '../components/Footer';
 
 function About() {
     return (
@@ -9,6 +10,7 @@ function About() {
             text=""
             picture={require("../assets/Image_source_2.png")}/>
             <h1>A propos</h1>
+            <Footer/>
         </div>
     )
 }
