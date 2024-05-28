@@ -1,11 +1,13 @@
 import Header from '../components/Header'
-import Banner from '../components/Banner'
+import Banner from '../components/Banner_temp'
 
 function About() {
     return (
         <div>
             <Header/>
-            <Banner img="../assets/Image source 2.png" text=""/>
+            <Banner  
+            text=""
+            picture={require("../assets/Image_source_2.png")}/>
             <h1>A propos</h1>
         </div>
     )

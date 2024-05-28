@@ -1,10 +1,9 @@
 import './Banner.css'
 
 function Banner(props) {
-    const imgSrc= require(`${props.img}`);
     return(  
         <div className='banner-container'>
-            <img src={imgSrc} alt='Banner' />
+            <img className="banner-img" src={props.picture} alt="" />
             <div className='banner-overlay'></div>
             <div className='banner-text'>{props.text}</div>
         </div>
