@@ -1,4 +1,5 @@
 $color-pink: #FF6060;
+@import '../index.scss';
 
 .card{
     background-color: $color-pink;
@@ -10,18 +11,35 @@ $color-pink: #FF6060;
     >img{
         display: block;
         width: 100%;
-        height: 75%;
+        height: 82%;
         object-fit: cover;
+        @include tablet-responsive {
+            height: 78%;}
+        @include smartphone-responsive{
+            height: 85%;}
     }
 
     >p{
         position: absolute;
         bottom: 0;
-        width:70%;
         font-size: 18px;
         line-height: 25px;
         color: white;
         padding: 5%;
         margin: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 90%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        white-space: normal;
+        @include tablet-responsive {
+        padding: 5px;}
+
+        @include smartphone-responsive{
+            font-size: 25px;
+            padding: 7px;}
     }
 }

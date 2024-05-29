@@ -5,7 +5,10 @@
   margin-bottom: 30px;
   box-sizing: border-box;
   position: relative;
-  max-width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
 }
 .banner-container > img {
   width: 100%;
@@ -13,7 +16,7 @@
      object-fit: cover;
   border-radius: 15px;
   display: block;
-  aspect-ratio: 9/1;
+  height: 100%;
 }
 .banner-container .banner-overlay {
   position: absolute;
