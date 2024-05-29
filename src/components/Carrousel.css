@@ -11,4 +11,24 @@ code {
 
 .carrousel-container {
   color: #FF6060;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.carrousel-container button.carrousel-arrowBack {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.carrousel-container button.carrousel-arrowForward {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.carrousel-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=Carrousel.css.map */

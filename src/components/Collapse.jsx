@@ -12,7 +12,17 @@ function Collapse(props){
                     </div>) :
                     (<div className="collaspe">
                             <div className='collapse-header'><h2>{props.title}</h2> <button className='collapse-button' onClick={()=> setisOpen(false)}><img src={arrowDown} alt="Replier"></img></button></div>
-                            <p>{props.content}</p> 
+                            
+                            { props.content ? 
+                            <p>{props.content}</p> : null
+                            }
+                            
+                            {props.list ? 
+                            <ul>
+                                {props.list.map((element, index) => (
+                                    <li key={index}>{element}</li>
+                                ))}
+                            </ul> : null}  
                     </div>)
 }
 

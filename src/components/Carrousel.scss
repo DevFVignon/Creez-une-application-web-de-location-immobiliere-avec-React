@@ -2,4 +2,25 @@
 
 .carrousel-container{
     color: $color-pink;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+
+    button.carrousel-arrowBack {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    button.carrousel-arrowForward {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    img{
+        object-fit: cover;
+    }
 }
