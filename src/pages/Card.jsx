@@ -1,9 +1,12 @@
+import Header from "../components/Header"
+import Slideshow from "../components/Slideshow"
 import Footer from "../components/Footer"
 
 function Card() {
     return (
         <div>
-            <h1>Fiche logement</h1>
+            <Header/>
+            <Slideshow/>
             <Footer/>
         </div>
     )

@@ -1,4 +1,28 @@
 .collaspe {
-  width: 50%;
+  width: 60%;
+  margin: 20px auto;
+  color: white;
+}
+.collaspe .collapse-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
   background-color: #FF6060;
+  border-radius: 10px;
+}
+.collaspe .collapse-header > h2 {
+  margin: 0;
+}
+.collaspe .collapse-header .collapse-button {
+  background-color: #FF6060;
+  border: none;
+}
+.collaspe > p {
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
 }/*# sourceMappingURL=Collapse.css.map */

@@ -1,6 +1,35 @@
 $color-pink: #FF6060;
 
 .collaspe{
-    width: 50%;
-    background-color: $color-pink;
+    width: 60%;
+    margin: 20px auto;
+    color: white;
+
+    .collapse-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        background-color: $color-pink;
+        border-radius: 10px;
+
+        >h2{
+            margin: 0;
+        }
+
+        .collapse-button{
+            background-color: $color-pink;
+            border: none;
+        }
+    }
+
+    >p{
+        background-color: white;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+    }
+
 }
