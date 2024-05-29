@@ -1,5 +1,4 @@
 import './Card.css'
-import { Link } from 'react-router-dom';
 
 
 // Les props attendues sont :
@@ -8,12 +7,10 @@ import { Link } from 'react-router-dom';
 
 function Card(props) {
     return(
-        <Link to="/Card">
         <div className="card">
             <img src={props.picture} alt="" />
             <p>{props.title}</p>
         </div>
-        </Link>
     )
 }
 

@@ -11,7 +11,7 @@ function Rooter(){
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/card" element={<Card />} />
+          <Route path="/logement/:index" element={<Card />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>

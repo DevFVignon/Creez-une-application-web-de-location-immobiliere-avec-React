@@ -3,6 +3,7 @@ import Banner from '../components/Banner_temp'
 import Card from '../components/Card'
 import './Home.css'
 import logementList from '../datas/logements.json'
+import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 
 function Home() {
@@ -15,7 +16,7 @@ function Home() {
             picture={require("../assets/Image_source_1.png")}
             />
             <div className="card-container">
-            {logementList.map((card) =>(<Card key={`${card.id}`} picture={card.cover} title={card.title}/>) )}
+            {logementList.map((card, index) =>(<Link to={`/logement/${index}`}  key={`${card}-${index}`}><Card picture={card.cover} title={card.title}/></Link>) )}
             </div>
 
             <Footer/>
