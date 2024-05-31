@@ -13,7 +13,6 @@ function Carrousel(){
 
     const [current, setCurrent] = useState(0);
     const length = logement.pictures.length;
-    console.log(length);
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
