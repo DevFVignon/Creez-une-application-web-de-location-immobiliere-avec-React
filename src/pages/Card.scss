@@ -7,3 +7,77 @@
 li {
     color: black;
 }
+
+.logementCard{
+    width: 80%;
+    margin: 30px auto;
+
+    .titleTagsHostRate{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .titleTags{
+            display: flex;
+            flex-direction: column;
+
+            .title{
+                .title-h1{
+                    margin-bottom: 0;
+                
+                }
+
+                p.title-p {
+                    margin-top: 5px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .tags{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                >div{
+                    background-color: $color-pink;
+                    border-radius: 15px;
+                    padding: 2px 15px 5px 15px;
+                    color: white;
+                }
+            }
+        }
+
+        .hostRate{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .host {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                .host-name{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                width: 50%;
+                text-align:end;
+                font-weight: normal;
+                color: $color-pink;}
+
+                >img {
+                    border-radius: 100px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+        .details{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            // width: 80%;
+            margin: auto;
+        }
+    
+}

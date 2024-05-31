@@ -13,6 +13,7 @@ function Carrousel(){
 
     const [current, setCurrent] = useState(0);
     const length = logement.pictures.length;
+    console.log(length);
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
@@ -30,13 +31,22 @@ function Carrousel(){
 
         
         <div className='carrousel-container'>
-            <button className='carrousel-arrowBack' onClick={prevSlide}><img src={arrowBack} alt=""/></button>
+
+            {length>1 ? 
+            <button className='carrousel-arrowBack' onClick={prevSlide}><img src={arrowBack} alt=""/></button> : null }
+
             {logement.pictures.map((index) => {
         return logement.pictures[current] === index 
-            ? <img key={index} src={logement.pictures[current]} alt="" /> 
+            ? <img className='carrousel-image' key={index} src={logement.pictures[current]} alt="" /> 
             : null;
     })}
-            <button className='carrousel-arrowForward' onClick={nextSlide}><img src={arrowForward} alt=""/></button>
+
+            {length>1 ?
+            <button className='carrousel-arrowForward' onClick={nextSlide}><img src={arrowForward} alt=""/></button> : null}
+
+            {length>1 ?
+            <span className='carrousel-number'>{current + 1}/{length}</span> : null }
+
         </div>
     );
 }

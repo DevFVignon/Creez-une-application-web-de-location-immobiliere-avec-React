@@ -14,21 +14,38 @@ code {
   position: relative;
   width: 80%;
   margin: auto;
+  border-radius: 20px;
   box-sizing: border-box;
+  overflow: hidden;
+}
+.carrousel-container > button {
+  background-color: transparent;
+  border: none;
 }
 .carrousel-container button.carrousel-arrowBack {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
 .carrousel-container button.carrousel-arrowForward {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
-.carrousel-container img {
+.carrousel-container .carrousel-image {
+  width: 100%;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.carrousel-container .carrousel-number {
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2px 5px 5px 5px;
+  border-radius: 10px;
 }/*# sourceMappingURL=Carrousel.css.map */
