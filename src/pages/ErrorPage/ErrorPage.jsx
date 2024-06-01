@@ -1,6 +1,6 @@
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import error404 from "../assets/404.png"
+import Header from "../../components/Header/Header"
+import Footer from "../../components/Footer/Footer"
+import error404 from "../../assets/404.png"
 import { Link } from "react-router-dom"
 import './ErrorPage.css'
 

@@ -1,5 +1,5 @@
 import './Footer.css';
-import logoBW from '../assets/LOGO_B&W.png';
+import logoBW from '../../assets/LOGO_B&W.png';
 
 function Footer() {
     return(

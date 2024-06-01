@@ -1,11 +1,11 @@
 import './Carrousel.css'
 import { useParams } from 'react-router-dom';
-import logementList from '../datas/logements.json'
+import logementList from '../../datas/logements.json'
 import React from 'react';
 import { useState } from 'react';
 
-import arrowBack from '../assets/arrow_back.png'
-import arrowForward from '../assets/arrow_forward.png'
+import arrowBack from '../../assets/arrow_back.png'
+import arrowForward from '../../assets/arrow_forward.png'
 
 function Carrousel(){
     const {id} = useParams();

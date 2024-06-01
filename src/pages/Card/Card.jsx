@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from 'react-router-dom';
-import Header from "../components/Header";
-import Carrousel from "../components/Carrousel";
-import logementList from '../datas/logements.json';
-import Footer from "../components/Footer";
+import Header from "../../components/Header/Header";
+import Carrousel from "../../components/Carrousel/Carrousel";
+import logementList from '../../datas/logements.json';
+import Footer from "../../components/Footer/Footer";
 import './Card.css';
-import Collapse from '../components/Collapse';
-import Rate from "../components/Rate";
+import Collapse from '../../components/Collapse/Collapse';
+import Rate from "../../components/Rate/Rate";
 
 function Card() {
     const { id } = useParams();

@@ -1,7 +1,7 @@
 import './Collapse.css'
 import { useState } from 'react';
-import arrowUp from '../assets/arrow_up.png'
-import arrowDown from '../assets/arrow_down.png'
+import arrowUp from '../../assets/arrow_up.png'
+import arrowDown from '../../assets/arrow_down.png'
 
 function Collapse(props){
     const [isOpen, setisOpen]=useState(false)

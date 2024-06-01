@@ -1,6 +1,6 @@
 import React from 'react';
-import fullStar from '../assets/star-full.png'
-import emptyStar from '../assets/star-empty.png'
+import fullStar from '../../assets/star-full.png'
+import emptyStar from '../../assets/star-empty.png'
 
 function Rate (props){
 
