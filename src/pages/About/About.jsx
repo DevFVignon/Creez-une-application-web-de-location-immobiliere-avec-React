@@ -9,7 +9,7 @@ function About() {
     return (
         <div>
             <Header/>
-            <Banner  
+            <Banner  className={false}
             text=""
             picture={require("../../assets/Image_source_2.png")}/>
             {aboutInfo.map((info, index)=>(<Collapse key={`${info.title}-${index}`} title={info.title} content={info.content}/>))}

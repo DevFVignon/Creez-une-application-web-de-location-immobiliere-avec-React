@@ -12,7 +12,7 @@ function Home() {
         <div>
             <Header/>
 
-            <Banner 
+            <Banner className={true}
             text="Chez vous, partout et ailleurs"
             picture={require("../../assets/Image_source_1.png")}
             />
