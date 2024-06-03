@@ -9,13 +9,23 @@ li {
 }
 
 .logementCard{
-    width: 80%;
+    width: 90%;
     margin: 30px auto;
+    @include desktop-responsive{
+        width: 85%;}
 
     .titleTagsHostRate{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+
+        @include tablet-responsive{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;}
+
+
+        @include desktop-responsive{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;}
 
         .titleTags{
             display: flex;
@@ -24,12 +34,21 @@ li {
             .title{
                 .title-h1{
                     margin-bottom: 0;
-                
-                }
+                    font-size: 18px;
+                    font-weight: 500; 
+                    @include tablet-responsive{
+                        font-size:26px;
+                        margin-top:0;} 
+                    }
+                    @include desktop-responsive{
+                        font-size:30px;
+                        margin-top:0;} 
+                    }
 
                 p.title-p {
                     margin-top: 5px;
-                    margin-bottom: 25px;
+                    font-size: 14px;
+                    font-weight: 500;
                 }
             }
 
@@ -39,17 +58,38 @@ li {
                 gap: 10px;
 
                 >div{
-                    background-color: $color-pink;
-                    border-radius: 15px;
-                    padding: 2px 15px 5px 15px;
+                    background-color: #FF6060;
+                    border-radius: 5px;
+                    padding: 2px 15px 2px 15px;
                     color: white;
+                    font-size: 11px;
+                    @include tablet-responsive{
+                        padding: 1px 15px 3px 15px;
+                        border-radius: 10px; 
+                    }
+                    @include tablet-responsive{
+                        font-size: 12px; 
+                    
                 }
             }
         }
 
         .hostRate{
             display: flex;
-            flex-direction: column;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            
+            @include tablet-responsive{
+                display: flex;
+                flex-direction: column;}
+
+
+            @include desktop-responsive{
+                display: flex;
+                flex-direction: column;}
+
+
             align-items: flex-end;
             .host {
                 display: flex;
@@ -63,21 +103,59 @@ li {
                 width: 50%;
                 text-align:end;
                 font-weight: normal;
-                color: $color-pink;}
+                font-size: 12px;
+                color: $color-pink;
+                }
 
                 >img {
                     border-radius: 100px;
-                    height: 70px;
+                    height: 40px;
+                }
+                
+            }
+            img.star {
+                height: 18px;
+                @include tablet-responsive{
+                    height: 22px;
+                }
+                @include desktop-responsive{
+                    height: 26px;
                 }
             }
         }
     }
         .details{
-            display: flex;
-            flex-direction: row;
-            gap: 100px;
-            // width: 80%;
-            margin: auto;
+
+            @include tablet-responsive{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                margin: auto;
+                width: 100%;
+                }
+
+
+            @include desktop-responsive{
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+                margin: auto;}
+
+            .collapse{
+                width: 100%;
+                margin : 15px auto;
+                @include tablet-responsive{
+                    border-radius: 10px;
+                    > h2 {
+                        font-size: 12px;}}
+                @include tablet-responsive{
+                    border-radius: 10px;
+                    > h2 {
+                        font-size: 14px;}
+                        .collapse .collapse-header {
+                            padding: 5px 15px;}    
+                    }
+            }
         }
     
 }

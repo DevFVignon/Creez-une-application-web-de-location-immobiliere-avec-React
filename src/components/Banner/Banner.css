@@ -1,5 +1,16 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
 .banner-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -8,7 +19,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 223px;
+  height: 100px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner-container {
+    height: 125px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner-container {
+    height: 175px;
+    width: 85%;
+  }
 }
 .banner-container > img {
   width: 100%;
@@ -17,6 +39,11 @@
   border-radius: 15px;
   display: block;
   height: 100%;
+}
+@media (min-width: 1024px) {
+  .banner-container > img {
+    border-radius: 25px;
+  }
 }
 .banner-container .banner-overlay {
   position: absolute;
@@ -28,13 +55,32 @@
   transform: translate(-50%, -50%);
   border-radius: 15px;
 }
+@media (min-width: 1024px) {
+  .banner-container .banner-overlay {
+    border-radius: 25px;
+  }
+}
 .banner-container .banner-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  text-align: center;
-  font-size: 2.5em;
+  text-align: left;
+  width: 90%;
+  font-size: 20px;
   font-weight: bold;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner-container .banner-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 1024px) {
+  .banner-container .banner-text {
+    text-align: center;
+    font-size: 36px;
+  }
 }/*# sourceMappingURL=Banner.css.map */

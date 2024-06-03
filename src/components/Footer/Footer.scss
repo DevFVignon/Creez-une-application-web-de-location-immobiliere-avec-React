@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .footer{
     width: 100%;
     background-color: black;
@@ -10,4 +12,21 @@
     padding-top: 50px;
     padding-bottom: 20px;
     box-sizing: border-box;
+
+    >img{
+        height: 38px;
+        @include tablet-responsive{
+            height: 28px;
+        }
+    }
+    
+    >p{
+        font-size: 12px;
+        text-align: center;
+        width: 90px;
+        @include tablet-responsive{
+            width: auto;
+            font-size: 16px;
+        }
+    }
 }

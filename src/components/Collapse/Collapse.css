@@ -10,31 +10,51 @@ code {
 }
 
 .collapse {
-  width: 60%;
-  margin: 20px auto;
   color: white;
+  margin: auto;
 }
 .collapse .collapse-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 0px 9px;
   background-color: #FF6060;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .collapse .collapse-header > h2 {
+  font-size: 14px;
   margin: 0;
+}
+@media (min-width: 1024px) {
+  .collapse .collapse-header > h2 {
+    font-size: 18px;
+    padding: 5px 9px;
+  }
 }
 .collapse .collapse-header .collapse-button {
   background-color: #FF6060;
   border: none;
+}
+.collapse .collapse-header .collapse-button > img {
+  height: 20px;
 }
 .collapse .collapse-content {
   color: black;
   overflow: hidden;
   height: 0;
   transition: height 0.3s ease;
+  font-size: 12px;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 5px;
+}
+@media (min-width: 1024px) {
+  .collapse .collapse-content {
+    width: 95%;
+    font-size: 16px;
+  }
 }
 .collapse > p {
   background-color: white;

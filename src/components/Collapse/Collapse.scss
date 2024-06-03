@@ -1,26 +1,36 @@
 @import '../../index.scss';
 
 .collapse {
-    width: 60%;
-    margin: 20px auto;
     color: white;
+    margin: auto;
 
     .collapse-header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 5px;
-        background-color: $color-pink;
-        border-radius: 10px;
+        padding: 0px 9px;
+        background-color: #FF6060;
+        border-radius: 5px;
 
         > h2 {
+            font-size: 14px;
             margin: 0;
-        }
+            @include desktop-responsive{
+                font-size: 18px;
+                padding: 5px 9px;
+            }
+            }
 
         .collapse-button {
             background-color: $color-pink;
             border: none;
+
+            >img{
+                height: 20px;
+            }
+            
+            
         }
     }
 
@@ -29,6 +39,15 @@
         overflow: hidden;
         height: 0;
         transition: height 0.3s ease;
+        font-size: 12px;
+        width: 90%;
+        margin: auto;
+        text-align: left;
+        padding-bottom: 5px ;
+        @include desktop-responsive{
+            width: 95%;
+            font-size: 16px;
+        }
     }
 
     > p {

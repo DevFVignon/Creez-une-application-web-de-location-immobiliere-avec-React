@@ -10,7 +10,7 @@ code {
 }
 
 .nav {
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -20,19 +20,42 @@ code {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 767px) {
+@media (min-width: 1024px) {
+  .nav {
+    width: 85%;
+  }
+}
+.nav .nav-logo {
+  height: 35px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
   .nav .nav-logo {
     height: 42px;
   }
 }
+@media (min-width: 1024px) {
+  .nav {
+    height: 50px;
+  }
+}
 .nav .nav-links {
   display: flex;
-  gap: 50px;
-  font-size: 1.75em;
+  justify-content: right;
+  width: 50%;
+  font-size: 12px;
+  padding-left: 5%;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 14%;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .nav .nav-links {
-    font-size: 1.5em;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav .nav-links {
+    font-size: 20px;
   }
 }
 .nav .nav-links > a {

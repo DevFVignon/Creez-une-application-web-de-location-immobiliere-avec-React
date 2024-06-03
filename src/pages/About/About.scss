@@ -1,0 +1,15 @@
+@import '../../index.scss';
+
+.collapse{
+    width: 90%;
+
+    @include tablet-responsive{
+        width: 75%;
+        margin-bottom: 15px;
+    }
+
+    @include desktop-responsive{
+        width: 75%;
+        margin-bottom: 20px;
+    }
+}

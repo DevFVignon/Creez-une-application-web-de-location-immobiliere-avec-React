@@ -14,18 +14,52 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  width: 90%;
+  margin: 30px auto;
   box-sizing: border-box;
   gap: 20px;
 }
+.error-container > * {
+  margin: 30px auto;
+}
 .error-container > h1 {
   color: #FF6060;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .error-container > h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .error-container > h1 {
+    font-size: 28px;
+  }
 }
 .error-container > img {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 80px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .error-container > img {
+    height: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .error-container > img {
+    height: 200px;
+  }
 }
 .error-container > a {
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .error-container > a {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=ErrorPage.css.map */

@@ -6,6 +6,7 @@ import logementList from '../../datas/logements.json'
 import { Link } from 'react-router-dom'
 import Footer from '../../components/Footer/Footer'
 
+
 function Home() {
     return (
         <div>

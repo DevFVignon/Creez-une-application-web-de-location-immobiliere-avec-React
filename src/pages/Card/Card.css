@@ -18,13 +18,27 @@ li {
 }
 
 .logementCard {
-  width: 80%;
+  width: 90%;
   margin: 30px auto;
 }
-.logementCard .titleTagsHostRate {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@media (min-width: 1024px) {
+  .logementCard {
+    width: 85%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logementCard .titleTagsHostRate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .logementCard .titleTagsHostRate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .logementCard .titleTagsHostRate .titleTags {
   display: flex;
@@ -32,26 +46,67 @@ li {
 }
 .logementCard .titleTagsHostRate .titleTags .title .title-h1 {
   margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
 }
-.logementCard .titleTagsHostRate .titleTags .title p.title-p {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logementCard .titleTagsHostRate .titleTags .title .title-h1 {
+    font-size: 26px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .logementCard .titleTagsHostRate .titleTags .title {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+.logementCard .titleTagsHostRate .titleTags p.title-p {
   margin-top: 5px;
-  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 500;
 }
-.logementCard .titleTagsHostRate .titleTags .tags {
+.logementCard .titleTagsHostRate .tags {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.logementCard .titleTagsHostRate .titleTags .tags > div {
+.logementCard .titleTagsHostRate .tags > div {
   background-color: #FF6060;
-  border-radius: 15px;
-  padding: 2px 15px 5px 15px;
+  border-radius: 5px;
+  padding: 2px 15px 2px 15px;
   color: white;
+  font-size: 11px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logementCard .titleTagsHostRate .tags > div {
+    padding: 1px 15px 3px 15px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logementCard .titleTagsHostRate .tags > div {
+    font-size: 12px;
+  }
 }
 .logementCard .titleTagsHostRate .hostRate {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
   align-items: flex-end;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logementCard .titleTagsHostRate .hostRate {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .logementCard .titleTagsHostRate .hostRate {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .logementCard .titleTagsHostRate .hostRate .host {
   display: flex;
@@ -65,15 +120,63 @@ li {
   width: 50%;
   text-align: end;
   font-weight: normal;
+  font-size: 12px;
   color: #FF6060;
 }
 .logementCard .titleTagsHostRate .hostRate .host > img {
   border-radius: 100px;
-  height: 70px;
+  height: 40px;
 }
-.logementCard .details {
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-  margin: auto;
+.logementCard .titleTagsHostRate .hostRate img.star {
+  height: 18px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logementCard .titleTagsHostRate .hostRate img.star {
+    height: 22px;
+  }
+}
+@media (min-width: 1024px) {
+  .logementCard .titleTagsHostRate .hostRate img.star {
+    height: 26px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logementCard .details {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: auto;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .logementCard .details {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: auto;
+  }
+}
+.logementCard .details .collapse {
+  width: 100%;
+  margin: 15px auto;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logementCard .details .collapse {
+    border-radius: 10px;
+  }
+  .logementCard .details .collapse > h2 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logementCard .details .collapse {
+    border-radius: 10px;
+  }
+  .logementCard .details .collapse > h2 {
+    font-size: 14px;
+  }
+  .logementCard .details .collapse .collapse .collapse-header {
+    padding: 5px 15px;
+  }
 }/*# sourceMappingURL=Card.css.map */

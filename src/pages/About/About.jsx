@@ -3,6 +3,7 @@ import Banner from '../../components/Banner/Banner_temp';
 import aboutInfo from '../../datas/about.json'
 import Collapse from '../../components/Collapse/Collapse';
 import Footer from '../../components/Footer/Footer';
+import './About.css'
 
 function About() {
     return (
