@@ -9,12 +9,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.collaspe {
+.collapse {
   width: 60%;
   margin: 20px auto;
   color: white;
 }
-.collaspe .collapse-header {
+.collapse .collapse-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -23,17 +23,31 @@ code {
   background-color: #FF6060;
   border-radius: 10px;
 }
-.collaspe .collapse-header > h2 {
+.collapse .collapse-header > h2 {
   margin: 0;
 }
-.collaspe .collapse-header .collapse-button {
+.collapse .collapse-header .collapse-button {
   background-color: #FF6060;
   border: none;
 }
-.collaspe > p {
+.collapse .collapse-content {
+  color: black;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+.collapse > p {
   background-color: white;
   color: black;
   text-align: left;
   padding: 10px;
   margin: 0;
+}
+.collapse ul {
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
 }/*# sourceMappingURL=Collapse.css.map */

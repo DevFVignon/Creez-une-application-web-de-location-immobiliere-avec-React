@@ -1,6 +1,6 @@
 @import '../../index.scss';
 
-.collaspe{
+.collapse {
     width: 60%;
     margin: 20px auto;
     color: white;
@@ -14,22 +14,37 @@
         background-color: $color-pink;
         border-radius: 10px;
 
-        >h2{
+        > h2 {
             margin: 0;
         }
 
-        .collapse-button{
+        .collapse-button {
             background-color: $color-pink;
             border: none;
         }
     }
 
-    >p{
-        background-color: white;
-    color: black;
-    text-align: left;
-    padding: 10px;
-    margin: 0;
+    .collapse-content {
+        color: black;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.3s ease;
     }
 
+    > p {
+        background-color: white;
+        color: black;
+        text-align: left;
+        padding: 10px;
+        margin: 0;
+    }
+
+    ul {
+        background-color: white;
+        color: black;
+        text-align: left;
+        padding: 10px;
+        margin: 0;
+        list-style: none;
+    }
 }
