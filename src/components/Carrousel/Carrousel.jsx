@@ -22,6 +22,8 @@ function Carrousel(){
         setCurrent(current === 0 ? length - 1 : current - 1);
       };
 
+      const getClassName = (i) => (i === current ? 'show' : '');
+
 
     if (!logement){
         return <div>Logement non trouvé</div>
@@ -34,11 +36,15 @@ function Carrousel(){
             {length>1 ? 
             <button className='carrousel-arrowBack' onClick={prevSlide}><img src={arrowBack} alt=""/></button> : null }
 
-            {logement.pictures.map((index) => {
+            {/* {logement.pictures.map((index) => {
         return logement.pictures[current] === index 
             ? <img className='carrousel-image' key={index} src={logement.pictures[current]} alt="" /> 
             : null;
-    })}
+    })} */}
+            <div className='images-container'>
+            {logement.pictures.map((logement, index) => {
+            return <img key={index} src={logement} alt="" className={getClassName(index)}></img>})}
+            </div>
 
             {length>1 ?
             <button className='carrousel-arrowForward' onClick={nextSlide}><img src={arrowForward} alt=""/></button> : null}
