@@ -11,7 +11,7 @@ code {
 
 .collapse {
   color: white;
-  margin: auto;
+  margin: 10px auto;
 }
 @media (min-width: 1440px) {
   .collapse {

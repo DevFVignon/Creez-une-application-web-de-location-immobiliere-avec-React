@@ -71,6 +71,11 @@ li {
   font-size: 14px;
   font-weight: 500;
 }
+@media (min-width: 1024px) {
+  .logementCard .titleTagsHostRate .titleTags .title p.title-p {
+    font-size: 16px;
+  }
+}
 @media (min-width: 1440px) {
   .logementCard .titleTagsHostRate .titleTags .title p.title-p {
     font-size: 18px;
@@ -95,6 +100,13 @@ li {
     font-size: 12px;
   }
 }
+@media (min-width: 1024px) {
+  .logementCard .titleTagsHostRate .tags > div {
+    padding: 4px 20px;
+    font-size: 12px;
+    border-radius: 15px;
+  }
+}
 @media (min-width: 1440px) {
   .logementCard .titleTagsHostRate .tags > div {
     padding: 4px 25px;
@@ -107,7 +119,6 @@ li {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  align-items: flex-end;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .logementCard .titleTagsHostRate .hostRate {
@@ -135,6 +146,11 @@ li {
   font-weight: normal;
   font-size: 12px;
   color: #FF6060;
+}
+@media (min-width: 1024px) {
+  .logementCard .titleTagsHostRate .hostRate .host .host-name {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1440px) {
   .logementCard .titleTagsHostRate .hostRate .host .host-name {
