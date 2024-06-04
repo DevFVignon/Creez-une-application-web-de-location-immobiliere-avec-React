@@ -57,6 +57,16 @@ code {
   height: 225px;
   margin: auto;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carrousel-container .images-container {
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .carrousel-container .images-container {
+    height: 300px;
+  }
+}
 .carrousel-container .images-container > img {
   position: absolute;
   -o-object-fit: cover;
@@ -65,6 +75,16 @@ code {
   height: 225px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carrousel-container .images-container > img {
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .carrousel-container .images-container > img {
+    height: 300px;
+  }
 }
 .carrousel-container .images-container > img.show {
   opacity: 1;

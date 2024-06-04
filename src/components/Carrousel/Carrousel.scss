@@ -41,6 +41,12 @@
         width: 100%;
         height: 225px;
         margin: auto;
+        @include tablet-responsive{
+            height: 250px;}
+        @include desktop-responsive{
+            height: 300px;}
+        
+        
     
         >img{
             position: absolute;
@@ -49,6 +55,10 @@
             height: 225px;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
+            @include tablet-responsive{
+                height: 250px;}
+            @include desktop-responsive{
+                height: 300px;}
             &.show{
                 opacity: 1;
             }

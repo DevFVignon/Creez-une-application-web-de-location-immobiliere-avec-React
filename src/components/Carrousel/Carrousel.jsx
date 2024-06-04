@@ -33,8 +33,7 @@ function Carrousel(){
         
         <div className='carrousel-container'>
 
-            {length>1 ? 
-            <button className='carrousel-arrowBack' onClick={prevSlide}><img src={arrowBack} alt=""/></button> : null }
+            
 
             {/* {logement.pictures.map((index) => {
         return logement.pictures[current] === index 
@@ -45,6 +44,9 @@ function Carrousel(){
             {logement.pictures.map((logement, index) => {
             return <img key={index} src={logement} alt="" className={getClassName(index)}></img>})}
             </div>
+
+            {length>1 ? 
+            <button className='carrousel-arrowBack' onClick={prevSlide}><img src={arrowBack} alt=""/></button> : null }
 
             {length>1 ?
             <button className='carrousel-arrowForward' onClick={nextSlide}><img src={arrowForward} alt=""/></button> : null}
