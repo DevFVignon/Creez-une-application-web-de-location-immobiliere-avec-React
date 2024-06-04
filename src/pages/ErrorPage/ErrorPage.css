@@ -19,8 +19,18 @@ code {
   box-sizing: border-box;
   gap: 20px;
 }
+@media (min-width: 1440px) {
+  .error-container {
+    margin: 60px auto;
+  }
+}
 .error-container > * {
   margin: 30px auto;
+}
+@media (min-width: 1440px) {
+  .error-container > * {
+    margin: 60px auto;
+  }
 }
 .error-container > h1 {
   color: #FF6060;
@@ -38,6 +48,11 @@ code {
     font-size: 28px;
   }
 }
+@media (min-width: 1440px) {
+  .error-container > h1 {
+    font-size: 42px;
+  }
+}
 .error-container > img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -53,6 +68,11 @@ code {
     height: 200px;
   }
 }
+@media (min-width: 1440px) {
+  .error-container > img {
+    height: 275px;
+  }
+}
 .error-container > a {
   color: black;
   text-decoration: underline;
@@ -61,5 +81,10 @@ code {
 @media (min-width: 1024px) {
   .error-container > a {
     font-size: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .error-container > a {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=ErrorPage.css.map */

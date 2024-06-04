@@ -14,6 +14,10 @@
     @include desktop-responsive{
         width: 85%;
     }
+    @include large-desktop-responsive{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
 
     >button{
         background-color: transparent;
@@ -33,6 +37,9 @@
             @include desktop-responsive{
                 height: 90px;
             }
+            @include large-desktop-responsive{
+                height: 110px;
+            }
         }
     }
 
@@ -45,6 +52,9 @@
             height: 250px;}
         @include desktop-responsive{
             height: 300px;}
+        @include large-desktop-responsive{
+            height: 400px;
+        }
         
         
     
@@ -59,6 +69,8 @@
                 height: 250px;}
             @include desktop-responsive{
                 height: 300px;}
+            @include large-desktop-responsive{
+                height: 400px;}
             &.show{
                 opacity: 1;
             }
@@ -78,6 +90,9 @@
             }
             @include desktop-responsive{
                 height: 90px;
+            }
+            @include large-desktop-responsive{
+                height: 110px;
             }
         }
     }

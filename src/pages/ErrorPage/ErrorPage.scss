@@ -9,9 +9,15 @@
     margin: 30px auto;
     box-sizing: border-box;
     gap: 20px;
+    @include large-desktop-responsive{
+        margin : 60px auto;
+    }
 
     >*{
         margin: 30px auto;
+        @include large-desktop-responsive{
+            margin : 60px auto;
+        }
     }
 
     >h1{
@@ -25,6 +31,9 @@
         @include desktop-responsive{
             font-size: 28px;
         }
+        @include large-desktop-responsive{
+            font-size: 42px;
+        }   
     }
 
     >img{
@@ -36,6 +45,9 @@
         @include desktop-responsive{
             height: 200px;
         }
+        @include large-desktop-responsive{
+            height: 275px;
+        }
     }
 
     >a{
@@ -44,6 +56,9 @@
         font-size: 14px;
         @include desktop-responsive{
             font-size: 16px;
+        }
+        @include large-desktop-responsive{
+            font-size: 24px;
         }
     }
 }

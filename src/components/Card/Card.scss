@@ -33,6 +33,12 @@ $color-pink: #FF6060;
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
+
+    @include large-desktop-responsive{
+        font-size: 20px;
+        width:90%;
+        margin-left: 20px;
+    }
 }}
 
 .card::before{

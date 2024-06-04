@@ -28,6 +28,12 @@ code {
     width: 85%;
   }
 }
+@media (min-width: 1440px) {
+  .carrousel-container {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
 .carrousel-container > button {
   background-color: transparent;
   border: none;
@@ -51,6 +57,11 @@ code {
     height: 90px;
   }
 }
+@media (min-width: 1440px) {
+  .carrousel-container button.carrousel-arrowBack > img {
+    height: 110px;
+  }
+}
 .carrousel-container .images-container {
   position: relative;
   width: 100%;
@@ -65,6 +76,11 @@ code {
 @media (min-width: 1024px) {
   .carrousel-container .images-container {
     height: 300px;
+  }
+}
+@media (min-width: 1440px) {
+  .carrousel-container .images-container {
+    height: 400px;
   }
 }
 .carrousel-container .images-container > img {
@@ -84,6 +100,11 @@ code {
 @media (min-width: 1024px) {
   .carrousel-container .images-container > img {
     height: 300px;
+  }
+}
+@media (min-width: 1440px) {
+  .carrousel-container .images-container > img {
+    height: 400px;
   }
 }
 .carrousel-container .images-container > img.show {
@@ -106,6 +127,11 @@ code {
 @media (min-width: 1024px) {
   .carrousel-container button.carrousel-arrowForward > img {
     height: 90px;
+  }
+}
+@media (min-width: 1440px) {
+  .carrousel-container button.carrousel-arrowForward > img {
+    height: 110px;
   }
 }
 .carrousel-container .carrousel-number {

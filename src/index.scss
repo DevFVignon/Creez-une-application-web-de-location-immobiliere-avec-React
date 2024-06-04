@@ -31,3 +31,11 @@ code {
       @content;
     }
   }
+
+  @mixin large-desktop-responsive {
+    @media (min-width: 1440px) {
+      @include desktop-responsive; 
+      @content;  
+  }
+}
+

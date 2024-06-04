@@ -39,17 +39,23 @@ li {
                     @include tablet-responsive{
                         font-size:26px;
                         margin-top:0;} 
-                    }
+                    
                     @include desktop-responsive{
                         font-size:30px;
-                        margin-top:0;} 
+                        margin-top:0;}
+                    @include large-desktop-responsive{
+                        font-size: 38px;
+                    } 
                     }
 
                 p.title-p {
                     margin-top: 5px;
                     font-size: 14px;
                     font-weight: 500;
-                }
+                    @include large-desktop-responsive{
+                        font-size: 18px;
+                    }
+                }}
             }
 
             .tags{
@@ -65,11 +71,13 @@ li {
                     font-size: 11px;
                     @include tablet-responsive{
                         padding: 1px 15px 3px 15px;
-                        border-radius: 10px; 
-                    }
-                    @include tablet-responsive{
+                        border-radius: 10px;
                         font-size: 12px; 
-                    
+                    }
+                    @include large-desktop-responsive{
+                         padding: 4px 25px;
+                         font-size: 16px;
+                         border-radius: 20px;  
                 }
             }
         }
@@ -105,11 +113,17 @@ li {
                 font-weight: normal;
                 font-size: 12px;
                 color: $color-pink;
+                @include large-desktop-responsive{
+                    font-size: 22px;
+                }
                 }
 
                 >img {
                     border-radius: 100px;
                     height: 40px;
+                    @include large-desktop-responsive{
+                        height: 70px;
+                    }
                 }
                 
             }
@@ -120,6 +134,9 @@ li {
                 }
                 @include desktop-responsive{
                     height: 26px;
+                }
+                @include large-desktop-responsive{
+                    height: 42px;
                 }
             }
         }
@@ -140,6 +157,9 @@ li {
                 flex-direction: row;
                 gap: 50px;
                 margin: auto;}
+                @include large-desktop-responsive{
+                    gap: 75px;
+                }
 
             .collapse{
                 width: 100%;

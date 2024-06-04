@@ -13,6 +13,11 @@ code {
   color: white;
   margin: auto;
 }
+@media (min-width: 1440px) {
+  .collapse {
+    margin: 30px auto;
+  }
+}
 .collapse .collapse-header {
   display: flex;
   flex-direction: row;
@@ -32,12 +37,23 @@ code {
     padding: 5px 9px;
   }
 }
+@media (min-width: 1440px) {
+  .collapse .collapse-header > h2 {
+    padding: 9px 14px;
+    font-size: 26px;
+  }
+}
 .collapse .collapse-header .collapse-button {
   background-color: #FF6060;
   border: none;
 }
 .collapse .collapse-header .collapse-button > img {
   height: 20px;
+}
+@media (min-width: 1440px) {
+  .collapse .collapse-header .collapse-button > img {
+    height: 32px;
+  }
 }
 .collapse .collapse-content {
   color: black;
@@ -54,6 +70,11 @@ code {
   .collapse .collapse-content {
     width: 95%;
     font-size: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .collapse .collapse-content {
+    font-size: 24px;
   }
 }
 .collapse > p {

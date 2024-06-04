@@ -18,6 +18,9 @@
         height: 175px;
         width: 85%;
     }
+    @include large-desktop-responsive{
+        height: 225px;
+    }
 
 
     >img{
@@ -62,6 +65,9 @@
         @include desktop-responsive{
             text-align: center;
             font-size: 36px;
+        }
+        @include large-desktop-responsive{
+            font-size: 52px;
         }
     }
 }

@@ -30,6 +30,16 @@ code {
     height: 28px;
   }
 }
+@media (min-width: 1024px) {
+  .footer > img {
+    height: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer > img {
+    height: 46px;
+  }
+}
 .footer > p {
   font-size: 12px;
   text-align: center;
@@ -39,5 +49,17 @@ code {
   .footer > p {
     width: auto;
     font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer > p {
+    width: auto;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer > p {
+    width: auto;
+    font-size: 26px;
   }
 }/*# sourceMappingURL=Footer.css.map */

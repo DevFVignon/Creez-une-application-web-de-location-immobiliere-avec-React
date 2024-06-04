@@ -32,6 +32,11 @@ code {
     width: 85%;
   }
 }
+@media (min-width: 1440px) {
+  .banner-container {
+    height: 225px;
+  }
+}
 .banner-container > img {
   width: 100%;
   -o-object-fit: cover;
@@ -82,5 +87,10 @@ code {
   .banner-container .banner-text {
     text-align: center;
     font-size: 36px;
+  }
+}
+@media (min-width: 1440px) {
+  .banner-container .banner-text {
+    font-size: 52px;
   }
 }/*# sourceMappingURL=Banner.css.map */

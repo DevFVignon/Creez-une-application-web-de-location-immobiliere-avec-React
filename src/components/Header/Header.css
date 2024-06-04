@@ -25,6 +25,11 @@ code {
     width: 85%;
   }
 }
+@media (min-width: 1440px) {
+  .nav {
+    width: 85%;
+  }
+}
 .nav .nav-logo {
   height: 35px;
 }
@@ -34,8 +39,13 @@ code {
   }
 }
 @media (min-width: 1024px) {
-  .nav {
+  .nav .nav-logo {
     height: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav .nav-logo {
+    height: 70px;
   }
 }
 .nav .nav-links {
@@ -56,6 +66,11 @@ code {
 @media (min-width: 1024px) {
   .nav .nav-links {
     font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav .nav-links {
+    font-size: 28px;
   }
 }
 .nav .nav-links > a {

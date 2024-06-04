@@ -44,7 +44,13 @@ code {
   position: absolute;
   bottom: 0;
 }
-
+@media (min-width: 1440px) {
+  .card > div {
+    font-size: 20px;
+    width: 90%;
+    margin-left: 20px;
+  }
+}
 .card::before {
   content: "";
   position: absolute;
