@@ -1,7 +1,7 @@
 @import '../../index.scss';
 
 .title-h1{
-    color: $color-pink;
+    color: $primary-color;
 }
 
 li {
@@ -9,23 +9,19 @@ li {
 }
 
 .logementCard{
-    width: 90%;
+    width: $mobile-width;
     margin: 30px auto;
     @include desktop-responsive{
-        width: 85%;}
+        width: $desktop-width;
+    }
 
     .titleTagsHostRate{
 
         @include tablet-responsive{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;}
-
-
-        @include desktop-responsive{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;}
+            justify-content: space-between;
+        }
 
         .titleTags{
             display: flex;
@@ -42,11 +38,11 @@ li {
                     
                     @include desktop-responsive{
                         font-size:30px;
-                        margin-top:0;}
+                    }
                     @include large-desktop-responsive{
                         font-size: 38px;
                     } 
-                    }
+                }
 
                 p.title-p {
                     margin-top: 5px;
@@ -58,34 +54,35 @@ li {
                     @include large-desktop-responsive{
                         font-size: 18px;
                     }
-                }}
+            
+                }
             }
+        }
 
-            .tags{
-                display: flex;
-                flex-direction: row;
-                gap: 10px;
+        .tags{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
 
-                >div{
-                    background-color: #FF6060;
-                    border-radius: 5px;
-                    padding: 2px 15px 2px 15px;
-                    color: white;
-                    font-size: 11px;
-                    @include tablet-responsive{
-                        padding: 1px 15px 3px 15px;
-                        border-radius: 10px;
-                        font-size: 12px; 
-                    }
-                    @include desktop-responsive{
-                        padding: 4px 20px;
-                        font-size: 12px;
-                        border-radius: 15px;  
-               }
-                    @include large-desktop-responsive{
-                         padding: 4px 25px;
-                         font-size: 16px;
-                         border-radius: 20px;  
+            >div{
+                background-color: $primary-color;
+                border-radius: 5px;
+                padding: 2px 15px 2px 15px;
+                color: white;
+                font-size: 11px;
+                @include tablet-responsive{
+                    padding: 1px 15px 3px 15px;
+                    border-radius: 10px;
+                    font-size: 12px; 
+                }
+                @include desktop-responsive{
+                    padding: 4px 20px;
+                    border-radius: 15px;  
+                }
+                @include large-desktop-responsive{
+                        padding: 4px 25px;
+                        font-size: 16px;
+                        border-radius: 20px;  
                 }
             }
         }
@@ -98,12 +95,8 @@ li {
             
             @include tablet-responsive{
                 display: flex;
-                flex-direction: column;}
-
-
-            @include desktop-responsive{
-                display: flex;
-                flex-direction: column;}
+                flex-direction: column;
+            }
 
             .host {
                 display: flex;
@@ -111,20 +104,20 @@ li {
                 align-items: center;
 
                 .host-name{
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
-                width: 50%;
-                text-align:end;
-                font-weight: normal;
-                font-size: 12px;
-                color: $color-pink;
-                @include desktop-responsive{
-                    font-size: 16px;
-                }
-                @include large-desktop-responsive{
-                    font-size: 22px;
-                }
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    width: 50%;
+                    text-align:end;
+                    font-weight: normal;
+                    font-size: 12px;
+                    color: $primary-color;
+                    @include desktop-responsive{
+                        font-size: 16px;
+                    }
+                    @include large-desktop-responsive{
+                        font-size: 22px;
+                    }
                 }
 
                 >img {
@@ -133,9 +126,9 @@ li {
                     @include large-desktop-responsive{
                         height: 70px;
                     }
-                }
-                
+                }    
             }
+
             img.star {
                 height: 18px;
                 @include tablet-responsive{
@@ -150,41 +143,36 @@ li {
             }
         }
     }
-        .details{
 
+    .details{
+
+        @include tablet-responsive{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin: auto;
+            width: 100%;
+            }
+
+
+        @include desktop-responsive{
+            gap: 50px;
+            margin: auto;}
+            @include large-desktop-responsive{
+                gap: 75px;
+            }
+
+        .collapse{
+            width: 100%;
+            margin : 15px auto;
             @include tablet-responsive{
-                display: flex;
-                flex-direction: row;
-                gap: 30px;
-                margin: auto;
-                width: 100%;
-                }
-
-
-            @include desktop-responsive{
-                display: flex;
-                flex-direction: row;
-                gap: 50px;
-                margin: auto;}
-                @include large-desktop-responsive{
-                    gap: 75px;
-                }
-
-            .collapse{
-                width: 100%;
-                margin : 15px auto;
-                @include tablet-responsive{
-                    border-radius: 10px;
-                    > h2 {
-                        font-size: 12px;}}
-                @include tablet-responsive{
-                    border-radius: 10px;
-                    > h2 {
-                        font-size: 14px;}
-                        .collapse .collapse-header {
-                            padding: 5px 15px;}    
-                    }
+                border-radius: 10px;
+                > h2 {
+                    font-size: 14px;}
+                    .collapse .collapse-header {
+                        padding: 5px 15px;
+                }    
             }
         }
-    
+    } 
 }

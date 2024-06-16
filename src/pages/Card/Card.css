@@ -26,14 +26,7 @@ li {
     width: 85%;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .logementCard .titleTagsHostRate {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .logementCard .titleTagsHostRate {
     display: flex;
     flex-direction: row;
@@ -49,7 +42,7 @@ li {
   font-size: 18px;
   font-weight: 500;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .logementCard .titleTagsHostRate .titleTags .title .title-h1 {
     font-size: 26px;
     margin-top: 0;
@@ -58,7 +51,6 @@ li {
 @media (min-width: 1024px) {
   .logementCard .titleTagsHostRate .titleTags .title .title-h1 {
     font-size: 30px;
-    margin-top: 0;
   }
 }
 @media (min-width: 1440px) {
@@ -93,7 +85,7 @@ li {
   color: white;
   font-size: 11px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .logementCard .titleTagsHostRate .tags > div {
     padding: 1px 15px 3px 15px;
     border-radius: 10px;
@@ -103,7 +95,6 @@ li {
 @media (min-width: 1024px) {
   .logementCard .titleTagsHostRate .tags > div {
     padding: 4px 20px;
-    font-size: 12px;
     border-radius: 15px;
   }
 }
@@ -120,13 +111,7 @@ li {
   align-items: center;
   justify-content: space-between;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .logementCard .titleTagsHostRate .hostRate {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .logementCard .titleTagsHostRate .hostRate {
     display: flex;
     flex-direction: column;
@@ -169,7 +154,7 @@ li {
 .logementCard .titleTagsHostRate .hostRate img.star {
   height: 18px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .logementCard .titleTagsHostRate .hostRate img.star {
     height: 22px;
   }
@@ -184,7 +169,7 @@ li {
     height: 42px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .logementCard .details {
     display: flex;
     flex-direction: row;
@@ -195,8 +180,6 @@ li {
 }
 @media (min-width: 1024px) {
   .logementCard .details {
-    display: flex;
-    flex-direction: row;
     gap: 50px;
     margin: auto;
   }
@@ -210,15 +193,7 @@ li {
   width: 100%;
   margin: 15px auto;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .logementCard .details .collapse {
-    border-radius: 10px;
-  }
-  .logementCard .details .collapse > h2 {
-    font-size: 12px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .logementCard .details .collapse {
     border-radius: 10px;
   }

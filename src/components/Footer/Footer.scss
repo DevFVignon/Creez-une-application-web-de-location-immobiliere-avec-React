@@ -1,17 +1,13 @@
 @import '../../index.scss';
 
 .footer{
+    @include flex-column-center;
     width: 100%;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction : column;
-    justify-content: center;
-    align-items: center;
+    background-color: $tertiary-color;
+    color: $secondary-color;
     gap: 10px;
     padding-top: 50px;
     padding-bottom: 20px;
-    box-sizing: border-box;
 
     >img{
         height: 38px;
@@ -35,11 +31,9 @@
             font-size: 16px;
         }
         @include desktop-responsive{
-            width: auto;
             font-size: 18px;
         }
         @include large-desktop-responsive{
-            width: auto;
             font-size: 26px;
         }
     }

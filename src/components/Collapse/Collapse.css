@@ -10,7 +10,7 @@ code {
 }
 
 .collapse {
-  color: white;
+  color: #f7f7f7;
   margin: 10px auto;
 }
 @media (min-width: 1440px) {
@@ -56,7 +56,7 @@ code {
   }
 }
 .collapse .collapse-content {
-  color: black;
+  color: #000000;
   overflow: hidden;
   height: 0;
   transition: height 0.3s ease;
@@ -78,15 +78,15 @@ code {
   }
 }
 .collapse > p {
-  background-color: white;
-  color: black;
+  background-color: #f7f7f7;
+  color: #000000;
   text-align: left;
   padding: 10px;
   margin: 0;
 }
 .collapse ul {
-  background-color: white;
-  color: black;
+  background-color: #f7f7f7;
+  color: #000000;
   text-align: left;
   padding: 10px;
   margin: 0;

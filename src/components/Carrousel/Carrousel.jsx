@@ -29,17 +29,8 @@ function Carrousel(){
         return <div>Logement non trouvé</div>
     }
     return (
-
-        
         <div className='carrousel-container'>
 
-            
-
-            {/* {logement.pictures.map((index) => {
-        return logement.pictures[current] === index 
-            ? <img className='carrousel-image' key={index} src={logement.pictures[current]} alt="" /> 
-            : null;
-    })} */}
             <div className='images-container'>
             {logement.pictures.map((logement, index) => {
             return <img key={index} src={logement} alt="" className={getClassName(index)}></img>})}

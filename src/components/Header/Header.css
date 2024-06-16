@@ -25,15 +25,10 @@ code {
     width: 85%;
   }
 }
-@media (min-width: 1440px) {
-  .nav {
-    width: 85%;
-  }
-}
 .nav .nav-logo {
   height: 35px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .nav .nav-logo {
     height: 42px;
   }
@@ -58,7 +53,7 @@ code {
   align-items: center;
   gap: 14%;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .nav .nav-links {
     font-size: 16px;
   }

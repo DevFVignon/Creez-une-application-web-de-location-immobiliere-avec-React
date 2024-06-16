@@ -12,7 +12,7 @@ code {
 .collapse {
   width: 90%;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .collapse {
     width: 75%;
     margin-bottom: 15px;
@@ -20,7 +20,6 @@ code {
 }
 @media (min-width: 1024px) {
   .collapse {
-    width: 75%;
     margin-bottom: 20px;
   }
 }/*# sourceMappingURL=About.css.map */

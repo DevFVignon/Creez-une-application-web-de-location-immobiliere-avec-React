@@ -14,9 +14,9 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   width: 90%;
   margin: 30px auto;
-  box-sizing: border-box;
   gap: 20px;
 }
 @media (min-width: 1440px) {
@@ -74,7 +74,7 @@ code {
   }
 }
 .error-container > a {
-  color: black;
+  color: #000000;
   text-decoration: underline;
   font-size: 14px;
 }

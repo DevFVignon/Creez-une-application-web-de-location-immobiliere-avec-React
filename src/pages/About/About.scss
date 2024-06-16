@@ -1,7 +1,7 @@
 @import '../../index.scss';
 
 .collapse{
-    width: 90%;
+    width: $mobile-width;
 
     @include tablet-responsive{
         width: 75%;
@@ -9,7 +9,6 @@
     }
 
     @include desktop-responsive{
-        width: 75%;
         margin-bottom: 20px;
     }
 }

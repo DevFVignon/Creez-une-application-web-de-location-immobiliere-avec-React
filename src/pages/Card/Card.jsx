@@ -40,14 +40,12 @@ function Card() {
                             <h1 className="title-h1">{logement.title}</h1>
                             <p className="title-p">{logement.location}</p>
                         </div>
-
                         <div className="tags">
                             {logement.tags.map((tag, index) => (
                                 <div key={index}>{tag} </div>
                             ))}
                         </div>
                     </div>
-
                     <div className="hostRate">
                         <div className="host">
                             <h2 className="host-name">{logement.host.name}</h2>
@@ -59,7 +57,6 @@ function Card() {
                         </div>
                     </div>
                 </div>
-
                 <div className="details">
                     <Collapse title='Descriptions' content={logement.description} />
                     <Collapse title='Equipements' list={logement.equipments} />

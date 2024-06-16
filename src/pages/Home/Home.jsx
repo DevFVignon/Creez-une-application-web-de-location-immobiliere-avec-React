@@ -18,7 +18,8 @@ function Home() {
             picture={require("../../assets/Image_source_1.png")}
             />
             <div className="card-container">
-            {logementList.map((card) =>(<Link to={`/logement/${card.id}`}  key={card.id}><Card picture={card.cover} title={card.title}/></Link>) )}
+            {logementList.map((card) =>(<Link to={`/logement/${card.id}`}  
+            key={card.id}><Card picture={card.cover} title={card.title}/></Link>) )}
             </div>
 
             <Footer/>

@@ -1,36 +1,33 @@
 @import '../../index.scss';
 
 .card-container{
-    width :90%;
+    width : $mobile-width;
     margin: auto;
     gap: 30px;
-    // padding: 30px;
     box-sizing: border-box;
 
     @include tablet-responsive {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        background-color: #F6F6F6;
+        background-color: $card-container-bgcolor;
         padding: 25px 25px 0 25px;
         border-radius: 15px;
         gap: 5px 25px;
-        margin-bottom: 30px;}
+        margin-bottom: 30px;
+    }
 
-        @include desktop-responsive{
-        width: 85%;
-        display: grid;
+    @include desktop-responsive{
+        width: $desktop-width;
         grid-template-columns: repeat(3, 1fr);
-        background-color: #F6F6F6;
         padding: 35px 35px 10px 35px;
-        border-radius: 15px;
         gap: 10px 35px;
-        margin-bottom: 30px;}
+    }
 
-        @include large-desktop-responsive{
-            width: 86%;
-            padding: 50px 50px 25px 50px;
-            border-radius: 20px;
-            gap: 30px 60px;
-            margin-top: 50px;
-            margin-bottom: 50px;}
+    @include large-desktop-responsive{
+        padding: 50px 50px 25px 50px;
+        border-radius: 20px;
+        gap: 30px 60px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }

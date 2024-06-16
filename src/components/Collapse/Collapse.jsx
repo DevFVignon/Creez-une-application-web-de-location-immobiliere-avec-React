@@ -24,8 +24,7 @@ function Collapse(props) {
                 className="collapse-content"
                 style={{
                     height: isOpen ? `${contentRef.current.scrollHeight}px` : '0px'
-                }}
-            >
+                }}>
                 {props.content && <p>{props.content}</p>}
                 {props.list && (
                     <ul>

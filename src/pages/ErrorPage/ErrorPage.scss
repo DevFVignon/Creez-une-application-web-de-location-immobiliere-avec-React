@@ -1,13 +1,9 @@
 @import '../../index.scss';
 
 .error-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
     width: 90%;
     margin: 30px auto;
-    box-sizing: border-box;
     gap: 20px;
     @include large-desktop-responsive{
         margin : 60px auto;
@@ -21,7 +17,7 @@
     }
 
     >h1{
-        color: $color-pink;
+        color: $primary-color;
         font-size: 18px;
         font-weight: 400;
         text-align: center;
@@ -51,7 +47,7 @@
     }
 
     >a{
-        color: black;
+        color: $tertiary-color;
         text-decoration: underline;
         font-size: 14px;
         @include desktop-responsive{

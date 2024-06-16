@@ -2,7 +2,7 @@
 
 
 .nav{
-    width: 90%;
+    width: $mobile-width;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -12,19 +12,21 @@
     justify-content: space-between;
     align-items: center;
     @include desktop-responsive{
-        width: 85%;}
-    @include large-desktop-responsive{
-        width: 85%;}
+        width: $desktop-width;
+    }
 
     .nav-logo{
         height :35px;
         @include tablet-responsive{
-            height: 42px;}
-        @include desktop-responsive{
-            height: 50px;}
-        @include large-desktop-responsive{
-            height: 70px;}
+            height: 42px;
         }
+        @include desktop-responsive{
+            height: 50px;
+        }
+        @include large-desktop-responsive{
+            height: 70px;
+        }
+    }
  
     .nav-links{
         display: flex;
@@ -36,21 +38,24 @@
         align-items: center;
         gap: 14%;
         @include tablet-responsive{
-            font-size:16px;}
+            font-size:16px;
+        }
         @include desktop-responsive{
-            font-size:20px;}
+            font-size:20px;
+        }
         @include large-desktop-responsive{
-            font-size:28px;}
+            font-size:28px;
+        }
 
-            >a{
-                text-decoration:none;
-                color: black;
-                cursor: pointer;
-                }
+        >a{
+            text-decoration:none;
+            color: black;
+            cursor: pointer;
+        }
 
-            >a.active{
-                text-decoration: underline;
-                cursor: default;
-            }
+        >a.active{
+            text-decoration: underline;
+            cursor: default;
+        }
     }
 }
