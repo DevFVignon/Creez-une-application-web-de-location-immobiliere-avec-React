@@ -22,14 +22,6 @@ code {
     width: 85%;
   }
 }
-.title-h1 {
-  color: #FF6060;
-}
-
-li {
-  color: #000000;
-}
-
 .logementCard {
   margin: 30px auto;
 }
@@ -210,4 +202,4 @@ li {
   .logementCard .details .collapse .collapse .collapse-header {
     padding: 5px 15px;
   }
-}/*# sourceMappingURL=Card.css.map */
+}/*# sourceMappingURL=AccommodationCard.css.map */
