@@ -8,7 +8,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin : 16px 0 20px 0;
     @include desktop-responsive{
         aspect-ratio:1;
     }
@@ -17,7 +17,7 @@
         @include full-size-image;
     }
 
-    >div{
+    >figcaption{
         line-height: 25px;
         font-weight: bold;
         color: $secondary-color;

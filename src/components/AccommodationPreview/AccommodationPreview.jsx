@@ -1,16 +1,22 @@
+/**
+ * AccommodationPreview
+ * 
+ * Affiche un apperçu du logement avec une image et un titre.
+ * 
+ * @param {Object} props - Props du composant.
+ * @param {string} props.picture - URL de l'image à afficher.
+ * @param {string} props.title - Titre à afficher sur l'aperçu.
+ * @returns {JSX.Element} - Forme du rendu du composant.
+ */
+
 import './AccommodationPreview.css';
-
-
-// Les props attendues sont :
-// 1)l'image sous cette forme dans le composant : ' picture={card.cover} '
-// 2)le titre sur de la carde sous cette forme :' title={card.title} '
 
 function AccommodationPreview(props) {
     return(
-        <div className="card">
+        <figure className="card">
             <img src={props.picture} alt="" />
-            <div>{props.title}</div>
-        </div>
+            <figcaption>{props.title}</figcaption>
+        </figure>
     )
 }
 
