@@ -21,8 +21,8 @@ const AccommodationCard = ({ logement }) => {
     const rate = Number(logement.rating);
 
     return (
-        <div className="logementCard">
-            <div className="titleTagsHostRate">
+        <article className="logementCard">
+            <section className="titleTagsHostRate">
                 <div className="titleTags">
                     <div className="title">
                         <h1 className="title-h1">{logement.title}</h1>
@@ -44,12 +44,12 @@ const AccommodationCard = ({ logement }) => {
                         <Rate rate={rate} />
                     </div>
                 </div>
-            </div>
-            <div className="details">
+            </section>
+            <section className="details">
                 <Collapse title='Descriptions' content={logement.description} />
                 <Collapse title='Equipements' list={logement.equipments} />
-            </div>
-        </div>
+            </section>
+        </article>
     );
 };
 
