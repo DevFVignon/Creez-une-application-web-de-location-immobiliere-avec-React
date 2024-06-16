@@ -1,9 +1,23 @@
+/**
+ * AccommodationCard composant
+ * Represente un fiche détaillé de l'hébergement.
+ * Affiche des détails incluant titre, lieux, tags, informations sur l'hôte,
+ * notes, descriptions, et liste d'équipements.
+ * 
+ * @component
+ * @param {Object} props - Props du composant.
+ * @param {Object} props.logement - Objet sur l'hébergement contenant des details comme le title, la localisation,
+ *                                  les tags, l'host, le rating, les descriptions, et la liste d'équipements.
+ * @returns {JSX.Element} - Forme du rendu du compoant.
+ */
+
 import React from 'react';
 import Collapse from '../Collapse/Collapse';
 import Rate from "../Rate/Rate";
 import './AccommodationCard.css';
 
 const AccommodationCard = ({ logement }) => {
+    // On extrait le nombre d'étoiles attribué au logement qui servira au composant Rating
     const rate = Number(logement.rating);
 
     return (
