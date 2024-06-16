@@ -9,6 +9,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+#root > div > * {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #root > div > * {
+    width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  #root > div > * {
+    width: 85%;
+  }
+}
 .card {
   background-color: #FF6060;
   border-radius: 10px;
@@ -34,7 +47,7 @@ code {
 .card > div {
   line-height: 25px;
   font-weight: bold;
-  color: white;
+  color: #f7f7f7;
   margin: 0;
   text-overflow: ellipsis;
   margin-inline-start: 0.5rem;
@@ -60,4 +73,4 @@ code {
   height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
   pointer-events: none;
-}/*# sourceMappingURL=Card.css.map */
+}/*# sourceMappingURL=AccommodationPreview.css.map */

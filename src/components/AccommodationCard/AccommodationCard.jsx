@@ -1,7 +1,6 @@
 import React from 'react';
 import Collapse from '../Collapse/Collapse';
 import Rate from "../Rate/Rate";
-import '../../pages/AccommodationPage/AccommodationPage.scss'
 import './AccommodationCard.css';
 
 const AccommodationCard = ({ logement }) => {
@@ -17,7 +16,8 @@ const AccommodationCard = ({ logement }) => {
                     </div>
                     <div className="tags">
                         {logement.tags.map((tag, index) => (
-                            <div key={index}>{tag} </div>
+                            <div key={index}>{tag} 
+                            </div>
                         ))}
                     </div>
                 </div>

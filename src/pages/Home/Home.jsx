@@ -1,6 +1,6 @@
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner_temp'
-import Card from '../../components/Card/Card'
+import AccommodationPreview from '../../components/AccommodationPreview/AccommodationPreview'
 import './Home.css'
 
 import logementList from '../../datas/logements.json'
@@ -19,7 +19,7 @@ function Home() {
             />
             <div className="card-container">
             {logementList.map((card) =>(<Link to={`/logement/${card.id}`}  
-            key={card.id}><Card picture={card.cover} title={card.title}/></Link>) )}
+            key={card.id}><AccommodationPreview picture={card.cover} title={card.title}/></Link>) )}
             </div>
 
             <Footer/>
