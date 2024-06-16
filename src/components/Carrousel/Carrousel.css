@@ -36,31 +36,31 @@ code {
     margin-bottom: 30px;
   }
 }
-.carrousel-container > button {
+.carrousel-container nav > button {
   background-color: transparent;
   border: none;
 }
-.carrousel-container button.carrousel-arrowBack {
+.carrousel-container nav button.carrousel-arrowBack {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-40%);
 }
-.carrousel-container button.carrousel-arrowBack > img {
+.carrousel-container nav button.carrousel-arrowBack > img {
   height: 30px;
 }
 @media (min-width: 768px) {
-  .carrousel-container button.carrousel-arrowBack > img {
+  .carrousel-container nav button.carrousel-arrowBack > img {
     height: 80px;
   }
 }
 @media (min-width: 1024px) {
-  .carrousel-container button.carrousel-arrowBack > img {
+  .carrousel-container nav button.carrousel-arrowBack > img {
     height: 90px;
   }
 }
 @media (min-width: 1440px) {
-  .carrousel-container button.carrousel-arrowBack > img {
+  .carrousel-container nav button.carrousel-arrowBack > img {
     height: 110px;
   }
 }
@@ -85,32 +85,41 @@ code {
     height: 400px;
   }
 }
-.carrousel-container .images-container > img {
+.carrousel-container .images-container > figure {
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 100%;
   height: 225px;
   opacity: 0;
+  margin: 0;
   transition: opacity 0.5s ease-in-out;
 }
 @media (min-width: 768px) {
-  .carrousel-container .images-container > img {
+  .carrousel-container .images-container > figure {
     height: 250px;
   }
 }
 @media (min-width: 1024px) {
-  .carrousel-container .images-container > img {
+  .carrousel-container .images-container > figure {
     height: 300px;
   }
 }
 @media (min-width: 1440px) {
-  .carrousel-container .images-container > img {
+  .carrousel-container .images-container > figure {
     height: 400px;
   }
 }
-.carrousel-container .images-container > img.show {
+.carrousel-container .images-container > figure.show {
   opacity: 1;
+}
+.carrousel-container .images-container > figure > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carrousel-container .images-container > figure > figcaption {
+  display: none;
 }
 .carrousel-container button.carrousel-arrowForward {
   position: absolute;

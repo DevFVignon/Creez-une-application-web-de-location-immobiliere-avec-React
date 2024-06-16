@@ -53,25 +53,37 @@ function Carrousel(){
         return <div>Logement non trouvé</div>
     }
     return (
-        <div className='carrousel-container'>
+      <div className='carrousel-container'>
 
-            <div className='images-container'>
-            {logement.pictures.map((logement, index) => {
-            return <img key={index} src={logement} alt="" className={getClassName(index)}></img>})}
-            </div>
-
-            {/*button qui re-reder l'index*/}
-            {length>1 ? 
-            <button className='carrousel-arrowBack' onClick={prevSlide}><img src={arrowBack} alt=""/></button> : null }
-
-            {/*button qui re-reder l'index*/}
-            {length>1 ?
-            <button className='carrousel-arrowForward' onClick={nextSlide}><img src={arrowForward} alt=""/></button> : null}
-
-            {length>1 ?
-            <span className='carrousel-number'>{current + 1}/{length}</span> : null }
-
+        <div className='images-container'>
+          {logement.pictures.map((logement, index) => {
+            return <figure key={index} className={getClassName(index)}>
+                      <img src={logement} alt="" ></img>
+                      <figcaption>Logement : {logement.title}</figcaption>
+                    </figure>
+            })
+          }
         </div>
+
+        {length > 1 && (
+          <>
+            <nav>
+              {/*button qui re-reder l'index*/}
+              <button className='carrousel-arrowBack' onClick={prevSlide} aria-label="Image précédente">
+                <img src={arrowBack} alt="Flèche vers la gauche"/>
+              </button>
+
+              {/*button qui re-reder l'index*/}
+              <button className='carrousel-arrowForward' onClick={nextSlide} aria-label="Image suivante">
+                <img src={arrowForward} alt="Flèche vers la droite"/>
+              </button>
+            </nav>
+            <span className='carrousel-number'>
+              {current + 1}/{length}
+            </span>
+          </>)
+        }
+      </div>
     );
 }
 
