@@ -9,13 +9,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+#root > div > * {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #root > div > * {
+    width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  #root > div > * {
+    width: 85%;
+  }
+}
 .error-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 90%;
   margin: 30px auto;
   gap: 20px;
 }
@@ -38,7 +50,7 @@ code {
   font-weight: 400;
   text-align: center;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .error-container > h1 {
     font-size: 24px;
   }
@@ -58,7 +70,7 @@ code {
      object-fit: cover;
   height: 80px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .error-container > img {
     height: 150px;
   }

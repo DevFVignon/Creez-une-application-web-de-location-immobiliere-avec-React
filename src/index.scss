@@ -19,7 +19,7 @@ $tertiary-color: #000000;
 $card-container-bgcolor: #F6F6F6;
 
 $mobile-width: 90%;
-$tablet-witdh: 85%;
+$tablet-width: 85%;
 $desktop-width: 85%;
 
 $breakpoint-tablet-min: 768px;
@@ -61,4 +61,13 @@ $breakpoint-large-desktop: 1440px;
   box-sizing: border-box;
 }
 
+#root > div > *{
+  width: $mobile-width;
+  @include tablet-responsive{
+    width: $tablet-width;
+  }
+  @include desktop-responsive{
+    width: $desktop-width;
+  }
+}
 

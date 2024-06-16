@@ -5,15 +5,11 @@
 }
 
 li {
-    color: black;
+    color: $tertiary-color;
 }
 
 .logementCard{
-    width: $mobile-width;
     margin: 30px auto;
-    @include desktop-responsive{
-        width: $desktop-width;
-    }
 
     .titleTagsHostRate{
 
@@ -68,7 +64,7 @@ li {
                 background-color: $primary-color;
                 border-radius: 5px;
                 padding: 2px 15px 2px 15px;
-                color: white;
+                color: $secondary-color;
                 font-size: 11px;
                 @include tablet-responsive{
                     padding: 1px 15px 3px 15px;

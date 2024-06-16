@@ -9,19 +9,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+#root > div > * {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #root > div > * {
+    width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  #root > div > * {
+    width: 85%;
+  }
+}
 .carrousel-container {
   color: #FF6060;
   position: relative;
-  width: 90%;
   margin: auto;
   border-radius: 20px;
   box-sizing: border-box;
   overflow: hidden;
-}
-@media (min-width: 1024px) {
-  .carrousel-container {
-    width: 85%;
-  }
 }
 @media (min-width: 1440px) {
   .carrousel-container {

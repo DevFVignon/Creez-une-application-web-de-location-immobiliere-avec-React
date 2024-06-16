@@ -1,5 +1,9 @@
 @import '../../index.scss';
 
+#root > div > footer {
+    width: 100%;
+}
+
 .footer{
     @include flex-column-center;
     width: 100%;

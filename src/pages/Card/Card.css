@@ -9,22 +9,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+#root > div > * {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #root > div > * {
+    width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  #root > div > * {
+    width: 85%;
+  }
+}
 .title-h1 {
   color: #FF6060;
 }
 
 li {
-  color: black;
+  color: #000000;
 }
 
 .logementCard {
-  width: 90%;
   margin: 30px auto;
-}
-@media (min-width: 1024px) {
-  .logementCard {
-    width: 85%;
-  }
 }
 @media (min-width: 768px) {
   .logementCard .titleTagsHostRate {
@@ -82,7 +89,7 @@ li {
   background-color: #FF6060;
   border-radius: 5px;
   padding: 2px 15px 2px 15px;
-  color: white;
+  color: #f7f7f7;
   font-size: 11px;
 }
 @media (min-width: 768px) {

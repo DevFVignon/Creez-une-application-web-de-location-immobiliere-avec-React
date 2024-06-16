@@ -2,7 +2,6 @@
 
 
 .nav{
-    width: $mobile-width;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -11,9 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @include desktop-responsive{
-        width: $desktop-width;
-    }
+
 
     .nav-logo{
         height :35px;
@@ -49,7 +46,7 @@
 
         >a{
             text-decoration:none;
-            color: black;
+            color: $tertiary-color;
             cursor: pointer;
         }
 

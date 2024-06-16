@@ -3,10 +3,10 @@ import logoBW from '../../assets/LOGO_B&W.png';
 
 function Footer() {
     return(
-        <div className='footer'>
+        <footer className='footer'>
             <img src={logoBW} alt="Kasa" />
             <p>© 2020 Kasa. All rights reserved</p>
-        </div>
+        </footer>
     )
 }
 

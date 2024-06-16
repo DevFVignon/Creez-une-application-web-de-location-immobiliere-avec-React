@@ -3,15 +3,11 @@
 .carrousel-container{
     color: $primary-color;
     position: relative;
-    width: $mobile-width;
     margin: auto;
     border-radius: 20px;
     box-sizing: border-box;
     overflow: hidden;
 
-    @include desktop-responsive{
-        width: $desktop-width;
-    }
     @include large-desktop-responsive{
         margin-top: 50px;
         margin-bottom: 30px;
@@ -52,9 +48,7 @@
             height: 300px;}
         @include large-desktop-responsive{
             height: 400px;
-        }
-        
-        
+        } 
     
         >img{
             position: absolute;

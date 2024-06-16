@@ -2,7 +2,6 @@
 
 .error-container{
     @include flex-column-center;
-    width: 90%;
     margin: 30px auto;
     gap: 20px;
     @include large-desktop-responsive{

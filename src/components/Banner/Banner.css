@@ -9,13 +9,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+#root > div > * {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #root > div > * {
+    width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  #root > div > * {
+    width: 85%;
+  }
+}
 .banner-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 90%;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -30,7 +42,6 @@ code {
 @media (min-width: 1024px) {
   .banner-container {
     height: 175px;
-    width: 85%;
   }
 }
 @media (min-width: 1440px) {
@@ -87,7 +98,7 @@ code {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #f7f7f7;
   text-align: left;
   width: 90%;
   font-size: 20px;
