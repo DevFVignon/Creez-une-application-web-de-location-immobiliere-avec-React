@@ -1,9 +1,9 @@
 @import '../../index.scss';
 
-#root > div > .mainAboutPage {
+#root > div > .mainAboutPage > .collapseContainer {
     margin: auto;
     @include tablet-responsive{
-        width: 70%;
+        width: 80%;
         margin-bottom: 15px;
     }
 

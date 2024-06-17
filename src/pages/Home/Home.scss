@@ -1,7 +1,6 @@
 @import '../../index.scss';
 
 .card-container{
-    width : $mobile-width;
     margin: auto;
     gap: 30px;
     box-sizing: border-box;
@@ -17,7 +16,6 @@
     }
 
     @include desktop-responsive{
-        width: $desktop-width;
         grid-template-columns: repeat(3, 1fr);
         padding: 35px 35px 10px 35px;
         gap: 10px 35px;

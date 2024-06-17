@@ -1,3 +1,13 @@
+/**
+ * Home composant
+ * 
+ * Cette page représente la page d'accueil de l'application Kasa.
+ * Elle affiche, par l'utilisation de composants, l'en-tête, une bannière, une liste de prévisualisations de logements, et un pied de page.
+ * Chaque prévisualisation de logement est un lien qui dirige vers la page de détail du logement correspondant.
+ * 
+ * @returns {JSX.Element} Forme du rendu du composant.
+ */
+
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner_temp'
 import AccommodationPreview from '../../components/AccommodationPreview/AccommodationPreview'
@@ -12,18 +22,22 @@ function Home() {
     return (
         <div>
             <Header/>
-
-            <Banner className={true}
-            text="Chez vous, partout et ailleurs"
-            picture={require("../../assets/Image_source_1.png")}
-            />
-            <div className="card-container">
-            {logementList.map((card) =>(<Link to={`/logement/${card.id}`}  
-            key={card.id}><AccommodationPreview picture={card.cover} title={card.title}/></Link>) )}
-            </div>
-
+            <main>
+                <Banner className={true}
+                    text="Chez vous, partout et ailleurs"
+                    picture={require("../../assets/Image_source_1.png")}
+                />
+                {/* On parcours la base de données des logements et créé un composant AccommodationPreviw à chaque logement,
+                techniquement à chaque objet du tableau de la base de données */}
+                <section className="card-container">
+                    {logementList.map((card) =>(
+                        <Link to={`/logement/${card.id}`} key={card.id}>
+                            <AccommodationPreview picture={card.cover} title={card.title}/>
+                        </Link>
+                    ))}
+                </section>
+            </main>
             <Footer/>
-
         </div>
     )
 }

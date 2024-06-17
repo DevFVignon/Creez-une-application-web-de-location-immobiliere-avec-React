@@ -11,6 +11,8 @@ code {
 
 #root > div > * {
   width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
   #root > div > * {
@@ -22,17 +24,17 @@ code {
     width: 85%;
   }
 }
-#root > div > .mainAboutPage {
+#root > div > .mainAboutPage > .collapseContainer {
   margin: auto;
 }
 @media (min-width: 768px) {
-  #root > div > .mainAboutPage {
-    width: 70%;
+  #root > div > .mainAboutPage > .collapseContainer {
+    width: 80%;
     margin-bottom: 15px;
   }
 }
 @media (min-width: 1024px) {
-  #root > div > .mainAboutPage {
+  #root > div > .mainAboutPage > .collapseContainer {
     margin-bottom: 20px;
   }
 }/*# sourceMappingURL=About.css.map */

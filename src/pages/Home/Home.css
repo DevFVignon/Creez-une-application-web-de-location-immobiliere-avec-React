@@ -11,6 +11,8 @@ code {
 
 #root > div > * {
   width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
   #root > div > * {
@@ -23,7 +25,6 @@ code {
   }
 }
 .card-container {
-  width: 90%;
   margin: auto;
   gap: 30px;
   box-sizing: border-box;
@@ -41,7 +42,6 @@ code {
 }
 @media (min-width: 1024px) {
   .card-container {
-    width: 85%;
     grid-template-columns: repeat(3, 1fr);
     padding: 35px 35px 10px 35px;
     gap: 10px 35px;
