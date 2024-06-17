@@ -27,15 +27,17 @@ function Collapse(props) {
     };
 
     return (
-        <div className="collapse">
+        <section className="collapse">
             <div className='collapse-header'>
                 <h2>{props.title}</h2>
                 {/*bouton déclencheur du useState et qui changera le contentRef*/}
-                <button className='collapse-button' onClick={toggleCollapse}>
+                <button className='collapse-button' onClick={toggleCollapse} 
+                aria-expanded={isOpen} aria-controls="collapse-content" aria-label={isOpen ? 'Replier' : 'Déplier' }>
                     <img src={isOpen ? arrowDown : arrowUp} alt={isOpen ? 'Replier' : 'Déplier'} />
                 </button>
             </div>
             <div
+                id="collapse-content"
                 ref={contentRef}
                 className="collapse-content"
                 style={{
@@ -51,7 +53,7 @@ function Collapse(props) {
                     </ul>
                 )}
             </div>
-        </div>
+        </section>
     );
 }
 

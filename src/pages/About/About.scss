@@ -1,9 +1,9 @@
 @import '../../index.scss';
 
-.collapse{
+#root > div > section.collapse{
 
     @include tablet-responsive{
-        width: 75%;
+        width: 70%;
         margin-bottom: 15px;
     }
 

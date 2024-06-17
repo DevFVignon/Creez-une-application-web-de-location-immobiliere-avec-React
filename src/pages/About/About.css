@@ -23,13 +23,13 @@ code {
   }
 }
 @media (min-width: 768px) {
-  .collapse {
-    width: 75%;
+  #root > div > section.collapse {
+    width: 70%;
     margin-bottom: 15px;
   }
 }
 @media (min-width: 1024px) {
-  .collapse {
+  #root > div > section.collapse {
     margin-bottom: 20px;
   }
 }/*# sourceMappingURL=About.css.map */
