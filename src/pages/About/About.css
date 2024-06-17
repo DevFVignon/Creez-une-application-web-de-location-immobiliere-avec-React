@@ -22,17 +22,17 @@ code {
     width: 85%;
   }
 }
-#root > div > main {
+#root > div > .mainAboutPage {
   margin: auto;
 }
 @media (min-width: 768px) {
-  #root > div > main {
+  #root > div > .mainAboutPage {
     width: 70%;
     margin-bottom: 15px;
   }
 }
 @media (min-width: 1024px) {
-  #root > div > main {
+  #root > div > .mainAboutPage {
     margin-bottom: 20px;
   }
 }/*# sourceMappingURL=About.css.map */

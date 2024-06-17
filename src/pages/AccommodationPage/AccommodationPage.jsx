@@ -1,3 +1,13 @@
+/**
+ * AccommodationPage composant
+ * 
+ * Représente une fiche de logement détaillée dans l'application Kasa.
+ * Elle affiche les détails du logement, y compris un carrousel d'images et une carte d'information sur le logement.
+ * Si l'ID du logement n'est pas trouvé dans la base de données, l'utilisateur est redirigé vers la page 404.
+ * 
+ * @returns {JSX.Element} La forme du rendu du composant.
+ */
+
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from 'react-router-dom';
 import Header from "../../components/Header/Header";
@@ -32,8 +42,10 @@ function AccommodationPage() {
     return (
         <div>
             <Header />
-            <Carrousel />
-            <AccommodationCard logement={logement} />
+            <main>
+                <Carrousel />
+                <AccommodationCard logement={logement} />
+            </main>
             <Footer />
         </div>
     );

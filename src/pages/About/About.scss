@@ -1,6 +1,6 @@
 @import '../../index.scss';
 
-#root > div > main {
+#root > div > .mainAboutPage {
     margin: auto;
     @include tablet-responsive{
         width: 70%;

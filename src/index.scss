@@ -63,6 +63,8 @@ $breakpoint-large-desktop: 1440px;
 
 #root > div > *{
   width: $mobile-width;
+  margin-left: auto;
+  margin-right: auto;
   @include tablet-responsive{
     width: $tablet-width;
   }
