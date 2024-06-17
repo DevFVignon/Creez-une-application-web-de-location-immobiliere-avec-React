@@ -22,65 +22,67 @@ code {
     width: 85%;
   }
 }
-.nav {
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.header {
+  margin: 30px auto;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.nav .nav-logo {
+.header .header-logo {
   height: 35px;
 }
 @media (min-width: 768px) {
-  .nav .nav-logo {
+  .header .header-logo {
     height: 42px;
   }
 }
 @media (min-width: 1024px) {
-  .nav .nav-logo {
+  .header .header-logo {
     height: 50px;
   }
 }
 @media (min-width: 1440px) {
-  .nav .nav-logo {
+  .header .header-logo {
     height: 70px;
   }
 }
-.nav .nav-links {
-  display: flex;
-  justify-content: right;
+.header .nav {
   width: 50%;
-  font-size: 12px;
+}
+.header .nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  font-size: 11px;
   padding-left: 5%;
   box-sizing: border-box;
   align-items: center;
   gap: 14%;
+  list-style-type: none;
 }
 @media (min-width: 768px) {
-  .nav .nav-links {
+  .header .nav .nav-links {
     font-size: 16px;
   }
 }
 @media (min-width: 1024px) {
-  .nav .nav-links {
+  .header .nav .nav-links {
     font-size: 20px;
   }
 }
 @media (min-width: 1440px) {
-  .nav .nav-links {
+  .header .nav .nav-links {
     font-size: 28px;
   }
 }
-.nav .nav-links > a {
+.header .nav .nav-links > li > a {
   text-decoration: none;
   color: #000000;
   cursor: pointer;
 }
-.nav .nav-links > a.active {
+.header .nav .nav-links > li > a.active {
   text-decoration: underline;
   cursor: default;
 }/*# sourceMappingURL=Header.css.map */

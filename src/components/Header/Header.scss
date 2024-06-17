@@ -1,10 +1,10 @@
 @import '../../index.scss';
 
 
-.nav{
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.header{
+    margin: 30px auto;
+    //margin-top: 30px;
+    //margin-bottom: 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@
     align-items: center;
 
 
-    .nav-logo{
+    .header-logo{
         height :35px;
         @include tablet-responsive{
             height: 42px;
@@ -25,34 +25,39 @@
         }
     }
  
-    .nav-links{
-        display: flex;
-        justify-content: right;
+
+    .nav{
         width: 50%;
-        font-size: 12px;
-        padding-left: 5%;
-        box-sizing: border-box;
-        align-items: center;
-        gap: 14%;
-        @include tablet-responsive{
-            font-size:16px;
-        }
-        @include desktop-responsive{
-            font-size:20px;
-        }
-        @include large-desktop-responsive{
-            font-size:28px;
-        }
+        .nav-links{
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            font-size: 11px;
+            padding-left: 5%;
+            box-sizing: border-box;
+            align-items: center;
+            gap: 14%;
+            list-style-type: none;
+            @include tablet-responsive{
+                font-size:16px;
+            }
+            @include desktop-responsive{
+                font-size:20px;
+            }
+            @include large-desktop-responsive{
+                font-size:28px;
+            }
 
-        >a{
-            text-decoration:none;
-            color: $tertiary-color;
-            cursor: pointer;
-        }
+            >li >a{
+                text-decoration:none;
+                color: $tertiary-color;
+                cursor: pointer;
+            }
 
-        >a.active{
-            text-decoration: underline;
-            cursor: default;
+            >li >a.active{
+                text-decoration: underline;
+                cursor: default;
+            }
         }
     }
 }
