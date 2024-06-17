@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Projet OpenClassrooms - Creez-une-application-web-de-location-immobiliere-avec-React - Kasa 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Ce dossier est autonome (pas besoin de télécharger d'autres dossiers). Le front-end est développé en HTML, CSS (avec le SCSS) et en React (framework JavaScript).
+La base de données est dans le dossier, dans src puis datas, dans des fichiers en format JSON.
 
-## Available Scripts
+## Structure du Dossier
+- `public/`: Contient les fichiers statiques et le fichier `index.html`.
+- `src/`: Contient les fichiers sources de l'application.
+- `components/`: Contient les composants réutilisables, avec leurs feuilles de styles.
+- `pages`: Contient les quatre pages du site sous forme de composants React, ainsi que leur fichiers de style 
+- `assets/`: Contient les images
+- `datas`: Contient les données sur les logements, et les collapse à propos de la page à propos
+- `router`: Contient le router qui gère les routes de l'application
+- `test`: Contient un test (ou plusieurs à l'avenir). Dossier qui n'était pas demandé pour la validation du projet. Il est présent juste par curiosité personnelle de commencer à m'intéresser aux test et d'essayer d'en rédiger.
 
-In the project directory, you can run:
+## Prérequis
+- npm ou yarn
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Installation
+Pour installer les dépendances nécessaires, exécutez la commande suivante à la racine du dossier :
+```bash
+#pour installer les dépendances du fichier package.json
+npm install
+# puis pour lancer l'application
+npm start
