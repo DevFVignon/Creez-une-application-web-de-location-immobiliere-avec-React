@@ -30,6 +30,7 @@ function AccommodationPage() {
             navigate("/404", { state: { message: "Can't get data" } });
             } else {
                 setLogement(foundLogement);
+                document.title = `${foundLogement.title}`;
             }
         }, [id, navigate]
     );

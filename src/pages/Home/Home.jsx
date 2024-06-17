@@ -8,6 +8,7 @@
  * @returns {JSX.Element} Forme du rendu du composant.
  */
 
+import { useEffect } from 'react'
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner_temp'
 import AccommodationPreview from '../../components/AccommodationPreview/AccommodationPreview'
@@ -17,8 +18,12 @@ import logementList from '../../datas/logements.json'
 import { Link } from 'react-router-dom'
 import Footer from '../../components/Footer/Footer'
 
-
 function Home() {
+
+    useEffect(() => {
+        document.title = "Kasa";
+    }, []);
+
     return (
         <div>
             <Header/>

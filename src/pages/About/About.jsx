@@ -7,6 +7,7 @@
  * @returns {JSX.Element} La structure JSX représentant la page "À propos".
  */
 
+import { useEffect } from 'react';
 import Header from '../../components/Header/Header';
 import Banner from '../../components/Banner/Banner_temp';
 import aboutInfo from '../../datas/about.json'
@@ -15,6 +16,11 @@ import Footer from '../../components/Footer/Footer';
 import './About.css'
 
 function About() {
+
+    useEffect(() => {
+        document.title = "A propos";
+    }, []);
+
     return (
         <div>
             <Header/>
