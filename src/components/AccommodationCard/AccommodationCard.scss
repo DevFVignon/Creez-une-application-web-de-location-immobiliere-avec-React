@@ -42,7 +42,6 @@
                     @include large-desktop-responsive{
                         font-size: 18px;
                     }
-            
                 }
             }
         }
@@ -68,9 +67,9 @@
                     border-radius: 15px;  
                 }
                 @include large-desktop-responsive{
-                        padding: 4px 25px;
-                        font-size: 16px;
-                        border-radius: 20px;  
+                    padding: 4px 25px;
+                    font-size: 16px;
+                    border-radius: 20px;  
                 }
             }
         }

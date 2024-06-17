@@ -22,21 +22,27 @@ code {
     width: 85%;
   }
 }
-img.star {
+.rate {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+.rate > li img.star {
   height: 18px;
 }
 @media (min-width: 768px) {
-  img.star {
+  .rate > li img.star {
     height: 22px;
   }
 }
 @media (min-width: 1024px) {
-  img.star {
+  .rate > li img.star {
     height: 26px;
   }
 }
 @media (min-width: 1440px) {
-  img.star {
+  .rate > li img.star {
     height: 42px;
   }
 }/*# sourceMappingURL=Rate.css.map */

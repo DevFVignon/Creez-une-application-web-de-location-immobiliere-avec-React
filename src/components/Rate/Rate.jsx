@@ -25,26 +25,29 @@ function Rate (props){
     const rate = props.rate;
     
     return(
-        <div className='rate'>
-
+        <ul className='rate'>
 			{stars.map((star) =>
 				rate >= star ? (
-					<img
-						key={star}
-						className="star"
-						src={fullStar}
-						alt="rating star"
-					/>
+					<li>
+						<img
+							key={star}
+							className="star"
+							src={fullStar}
+							alt="rating star"
+						/>
+					</li>
 				) : ( 
-					<img
-						key={star}
-						className="star"
-						src={emptyStar}
-						alt="rating star"
-					/>
+					<li>
+						<img
+							key={star}
+							className="star"
+							src={emptyStar}
+							alt="rating star"
+						/>
+					</li>
 				)
 			)}
-        </div>
+        </ul>
     )
 }
 
