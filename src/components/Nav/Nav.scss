@@ -1,0 +1,36 @@
+@import '../../index.scss';
+
+.nav{
+    width: 50%;
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        font-size: 11px;
+        padding-left: 5%;
+        box-sizing: border-box;
+        align-items: center;
+        gap: 14%;
+        list-style-type: none;
+        @include tablet-responsive{
+            font-size:16px;
+        }
+        @include desktop-responsive{
+            font-size:20px;
+        }
+        @include large-desktop-responsive{
+            font-size:28px;
+        }
+
+        >li >a{
+            text-decoration:none;
+            color: $tertiary-color;
+            cursor: pointer;
+        }
+
+        >li >a.active{
+            text-decoration: underline;
+            cursor: default;
+        }
+    }
+}
