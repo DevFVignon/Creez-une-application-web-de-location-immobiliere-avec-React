@@ -3,7 +3,7 @@
  *
  * La collapse peut afficher du texte ou une liste d'élément.
  *
- * @param {Object} props - Props du composant objet.
+ * @param {Object} props - Les propriétés passées au composant.
  * @param {string} props.title - Title visible de la collapse.
  * @param {string} [props.content] - Texte qui s'affiche quand la collapse est ouverte.
  * @param {string[]} [props.list] - Liste qui s'affiche quand la collapse est ouverte.

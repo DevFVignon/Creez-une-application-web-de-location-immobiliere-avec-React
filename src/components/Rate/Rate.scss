@@ -1,0 +1,14 @@
+@import '../../index.scss';
+
+img.star {
+    height: 18px;
+    @include tablet-responsive{
+        height: 22px;
+    }
+    @include desktop-responsive{
+        height: 26px;
+    }
+    @include large-desktop-responsive{
+        height: 42px;
+    }
+}

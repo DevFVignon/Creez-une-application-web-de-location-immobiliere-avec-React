@@ -5,7 +5,7 @@
  * notes, descriptions, et liste d'équipements.
  * 
  * @component
- * @param {Object} props - Props du composant.
+ * @param {Object} props - Les propriétés passées au composant.
  * @param {Object} props.logement - Objet sur l'hébergement contenant des details comme le title, la localisation,
  *                                  les tags, l'host, le rating, les descriptions, et la liste d'équipements.
  * @returns {JSX.Element} - Forme du rendu du compoant.

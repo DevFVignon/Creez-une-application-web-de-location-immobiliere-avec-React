@@ -3,7 +3,7 @@
  * 
  * Affiche un apperçu du logement avec une image et un titre.
  * 
- * @param {Object} props - Props du composant.
+ * @param {Object} props - Les propriétés passées au composant.
  * @param {string} props.picture - URL de l'image à afficher.
  * @param {string} props.title - Titre à afficher sur l'aperçu.
  * @returns {JSX.Element} - Forme du rendu du composant.
