@@ -1,3 +1,12 @@
+/**
+ * About Component
+ * 
+ * Cette page représente la section "À propos" de l'application Kasa.
+ * Elle comprend, grâce à l'import de composants, l'en-tête, une bannière, des collapses pour afficher des informations supplémentaires, et un pied de page.
+ * 
+ * @returns {JSX.Element} La structure JSX représentant la page "À propos".
+ */
+
 import Header from '../../components/Header/Header';
 import Banner from '../../components/Banner/Banner_temp';
 import aboutInfo from '../../datas/about.json'
@@ -9,10 +18,12 @@ function About() {
     return (
         <div>
             <Header/>
-            <Banner  className={false}
-            text=""
-            picture={require("../../assets/Image_source_2.png")}/>
-            {aboutInfo.map((info, index)=>(<Collapse key={`${info.title}-${index}`} title={info.title} content={info.content}/>))}
+            <Banner className={false} text="" picture={require("../../assets/Image_source_2.png")}/>
+            {/* On parcours les données du fichier about.json et créé un collapse à chaque objet du tableau du fichier */}
+            {aboutInfo.map((info, index)=>(
+                <Collapse key={`${info.title}-${index}`} title={info.title} content={info.content}
+                />
+            ))}
             <Footer/>
         </div>
     )
