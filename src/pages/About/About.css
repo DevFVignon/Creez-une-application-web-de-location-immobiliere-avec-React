@@ -22,14 +22,17 @@ code {
     width: 85%;
   }
 }
+#root > div > main {
+  margin: auto;
+}
 @media (min-width: 768px) {
-  #root > div > section.collapse {
+  #root > div > main {
     width: 70%;
     margin-bottom: 15px;
   }
 }
 @media (min-width: 1024px) {
-  #root > div > section.collapse {
+  #root > div > main {
     margin-bottom: 20px;
   }
 }/*# sourceMappingURL=About.css.map */

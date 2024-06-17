@@ -1,7 +1,7 @@
 @import '../../index.scss';
 
-#root > div > section.collapse{
-
+#root > div > main {
+    margin: auto;
     @include tablet-responsive{
         width: 70%;
         margin-bottom: 15px;
