@@ -11,7 +11,7 @@ function Rate (props){
     return(
         <div className='rate'>
 
-        {stars.map((star) =>
+			{stars.map((star) =>
 				rate >= star ? (
 					<img
 						key={star}
@@ -28,8 +28,6 @@ function Rate (props){
 					/>
 				)
 			)}
-		
-        
         </div>
     )
 }

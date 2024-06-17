@@ -16,14 +16,14 @@ function Nav(){
 
     return(
         <nav className="nav">
-        <ul className="nav-links">
-            <li>
-                <Link to="/"  className={location.pathname === '/' ? 'active' : ''}>ACCUEIL</Link>
-            </li>
-            <li>
-                <Link to='/about' className={location.pathname === '/about' ? 'active' : ''}>A PROPOS</Link>
-            </li>
-        </ul>
+            <ul className="nav-links">
+                <li>
+                    <Link to="/"  className={location.pathname === '/' ? 'active' : ''}>ACCUEIL</Link>
+                </li>
+                <li>
+                    <Link to='/about' className={location.pathname === '/about' ? 'active' : ''}>A PROPOS</Link>
+                </li>
+            </ul>
         </nav>
     )
 }
