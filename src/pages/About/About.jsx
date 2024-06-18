@@ -25,7 +25,7 @@ function About() {
         <div>
             <Header/>
             <main className="mainAboutPage">
-                <Banner className={false} text="" picture={require("../../assets/Image_source_2.png")}/>
+                <Banner className={false} text="" picture={require("../../assets/Image_source_2.webp")}/>
                 <section className='collapseContainer'>
                     {/* On parcours les données du fichier about.json et créé un collapse à chaque objet du tableau du fichier */}
                     {aboutInfo.map((info, index)=>(

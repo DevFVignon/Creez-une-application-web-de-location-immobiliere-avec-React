@@ -11,10 +11,14 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace; 
   }
-  
-$primary-color: #FF6060;
-$secondary-color: #f7f7f7;
-$tertiary-color: #000000;
+
+$pink: #FF6060;
+$white:#f7f7f7;
+$black: #000000;
+
+$primary-color: $pink;
+$secondary-color: $white;
+$tertiary-color: $black;
 
 $card-container-bgcolor: #F6F6F6;
 

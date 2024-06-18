@@ -30,7 +30,7 @@ function Home() {
             <main>
                 <Banner className={true}
                     text="Chez vous, partout et ailleurs"
-                    picture={require("../../assets/Image_source_1.png")}
+                    picture={require("../../assets/Image_source_1.webp")}
                 />
                 {/* On parcours la base de données des logements et créé un composant AccommodationPreviw à chaque logement,
                 techniquement à chaque objet du tableau de la base de données */}
