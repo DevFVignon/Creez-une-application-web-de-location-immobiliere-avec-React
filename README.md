@@ -1,7 +1,35 @@
 # Projet OpenClassrooms - Creez-une-application-web-de-location-immobiliere-avec-React - Kasa 
 
+## Contexte
+
+Vous êtes développeur front-end en freelance pour Kasa, une entreprise de location d’appartements entre particuliers.
+
+Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
+
+L'occasion parfaite pour vous d'ajouter une belle référence à votre portfolio de freelance !
+
+Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end.
+
+## Contraintes fonctionnelles
+
+Quelques précisions sur les fonctionnalités du site :
+
+Pour le défilement des photos dans la galerie (composant Gallery) :
+Si l'utilisateur se trouve à la première image et qu'il clique sur "Image précédente", la galerie affiche la dernière image. 
+Inversement, quand l'image affichée est la dernière de la galerie, si l'utilisateur clique sur "Image suivante", la galerie affiche la première image. 
+S'il n'y a qu'une seule image, les boutons "Suivant" et "Précédent" ainsi que la numérotation n'apparaissent pas.
+La galerie doit toujours rester de la même hauteur, celle indiquée sur la maquette Figma. Les images seront donc coupées et centrées dans le cadre de l’image.
+Collapse : Par défaut, les Collapses sont fermés à l'initialisation de la page. 
+Si le Collapse est ouvert, le clic de l'utilisateur permet de le fermer.
+Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
+
+# Coding guidelines
+
+![Conding guidelines p1](./src/assets/imagesreadme/codingguidelinesp1.png)
+![Coding guidelines p2](./src/assets/imagesreadme/codingguidelinesp2.png)
+
 ## Description
-Ce dossier est autonome (pas besoin de télécharger d'autres dossiers). Le front-end est développé en HTML, CSS (avec le SCSS) et en React (framework JavaScript).
+Le code est développé en HTML, CSS (avec le SCSS) et en React (framework JavaScript).
 La base de données est dans le dossier, dans src puis datas, dans des fichiers en format JSON.
 
 ## Structure du Dossier
